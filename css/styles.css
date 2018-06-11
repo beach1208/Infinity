@@ -13,13 +13,12 @@
 
 section { padding: 80px 0;}
 li { list-style: none;}
-header,#ABOUT,#MENU,#PROMOTION { height: 100vh;}
+header,#ABOUT,#MENU { height: 100vh;}
 
 /* HEADER */
 
 header {
     background-image: url(../img/spaheader.png);
-    height: 100vh;
     background-position: center;
     background-size: cover;
 }
@@ -29,6 +28,33 @@ header {
     background-image: linear-gradient(rgba(255, 255, 255, 0.836), rgba(107, 107, 107, 0.274)),url(../img/menu.jpg);
     background-position: center;
     background-size: cover;
+}
+
+
+/* PROMOTION Section  */
+#PROMOTION {
+    margin: 10%;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-container {
+  width: 300px;
+  height: 450px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 7px #ccc;
+}
+
+.card-img {
+    width: 80%;
+    height: 10%;
+    border-radius: 5px 5px 5px 5px;
+    margin: 30px;
+    opacity: 0.8;
 }
 
 #CONTACT {
