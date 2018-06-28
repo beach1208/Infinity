@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-size: 16px;
+}
 /* Global elements */
 .container {
     max-width: 1140px;
@@ -13,26 +16,101 @@
 
 section { padding: 80px 0;}
 li { list-style: none;}
-header,#ABOUT,#MENU { height: 100vh;}
 
+/* NAVIGATION BAR */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2e335b;
+}
+
+nav li {
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color:#dbbfcd;
+    text-decoration: none;
+}
 /* HEADER */
 
 header {
-    background-image: url(../img/spaheader.png);
+    background-image: linear-gradient(rgba(245, 212, 237, 0.28), rgb(124, 58, 125)),url(../img/ballet-header.jpg);
     background-position: center;
     background-size: cover;
+    height: 100vh;
+}
+
+.top-title {
+    width: 100%;
+    /* height: 100px; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    overflow: auto;  
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 15px;
+    font-size: 500%;
+}
+/* Welcome section */
+
+.intro-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.intro-card {
+  width: 300px;
+  height: 450px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 7px #ccc;
+}
+
+.card-img {
+    width: 80%;
+    height: 10%;
+    border-radius: 5px 5px 5px 5px;
+    margin: 30px;
+    opacity: 0.8;
+}
+
+/* Second main section */
+
+#second-main{
+    background-image: linear-gradient(rgba(160, 148, 148, 0.836), rgba(251, 247, 247, 0.274)),url(../img/ballet-second.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
 }
 
 
-#MENU{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.836), rgba(107, 107, 107, 0.274)),url(../img/menu.jpg);
-    background-position: center;
-    background-size: cover;
+
+#CONTACT {
+    background: rgba(230, 211, 196, 0.36);
+}
+
+footer {
+    background: #211d54bd;
+    padding: 10px;
+    color: #e6e2e5;
+    text-align: center;
 }
 
 
-/* PROMOTION Section  */
-#PROMOTION {
+/*////////////////  Class price Section  /////////////*/
+#class-price {
     margin: 10%;
 }
 
@@ -55,8 +133,4 @@ header {
     border-radius: 5px 5px 5px 5px;
     margin: 30px;
     opacity: 0.8;
-}
-
-#CONTACT {
-    background: rgb(208, 227, 243);
 }
