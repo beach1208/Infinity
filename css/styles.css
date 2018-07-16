@@ -7,6 +7,15 @@
 body{
     font-size: 16px;
 }
+
+html,body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -30px;
+}
 /* Global elements */
 .container {
     max-width: 1140px;
@@ -65,24 +74,28 @@ h1{
 /* Welcome section */
 
 .intro-card-container {
+   
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 100px;
 }
 .intro-card {
-  width: 300px;
-  height: 450px;
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 5px 7px #ccc;
+    width: 20em;
+    border: solid 1px black;
 }
 
-.card-img {
-    width: 80%;
-    height: 10%;
-    border-radius: 5px 5px 5px 5px;
-    margin: 30px;
+.radius-image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.welcome-img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 50%; */
     opacity: 0.8;
 }
 
@@ -101,14 +114,40 @@ h1{
     background: rgba(230, 211, 196, 0.36);
 }
 
-footer {
+/* FOOTER */
+
+.footer {
     background: #211d54bd;
+    margin-top: 2em;
+    height: 30px;
     padding: 10px;
     color: #e6e2e5;
     text-align: center;
 }
 
 
+
+/*////////////////  About section  /////////////*/
+.column {
+    height: 100vh;
+    width: 100%;
+}
+
+.left {
+    background-image: url(../img/about2.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-title {
+    padding: 1em;
+    font-size: 4em;
+    line-height: 1em;
+    margin-left: -50%;
+}
+
+
+ 
 /*////////////////  Class price Section  /////////////*/
 #class-price {
     margin: 10%;
@@ -134,3 +173,13 @@ footer {
     margin: 30px;
     opacity: 0.8;
 }
+
+
+
+/*  */
+
+@media all and (min-width: 500px) {
+    .about-wrapper {
+      display: flex;
+    }
+  }
