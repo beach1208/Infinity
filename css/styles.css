@@ -15,6 +15,7 @@ html,body {
 .wrapper {
     min-height: 100%;
     margin-bottom: -30px;
+    overflow: hidden;
 }
 /* Global elements */
 .container {
@@ -121,10 +122,12 @@ h1{
     width: 10em;
     height: auto;
     padding: 1em;
+    margin-top: 1em;
     background:#d06363;
     color: #fff;
     border-radius: 10px;
     overflow: hidden;
+
 }
 
 
