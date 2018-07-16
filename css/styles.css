@@ -74,7 +74,6 @@ h1{
 /* Welcome section */
 
 .intro-card-container {
-   
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -83,31 +82,50 @@ h1{
 }
 .intro-card {
     width: 20em;
-    border: solid 1px black;
 }
 
-.radius-image{
+/* .radius-image{
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-}
+} */
 
 .welcome-img {
     max-width: 100%;
-    height: auto;
-    /* border-radius: 50%; */
+    height: 20em;
+    border-radius: 50%;
     opacity: 0.8;
 }
 
-/* Second main section */
 
-#second-main{
+/*////////////////  Join section  /////////////*/
+
+#join-section{
     background-image: linear-gradient(rgba(160, 148, 148, 0.836), rgba(251, 247, 247, 0.274)),url(../img/ballet-second.jpg);
     background-position: center;
     background-size: cover;
     height: 90vh;
+    position: relative;
+}
+.join-message {
+    max-width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;  
 }
 
+.join-btn {
+    width: 10em;
+    height: auto;
+    padding: 1em;
+    background:#d06363;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 
 #CONTACT {
@@ -118,7 +136,15 @@ h1{
 
 .footer {
     background: #211d54bd;
-    margin-top: 2em;
+    height: 30px;
+    padding: 10px;
+    color: #e6e2e5;
+    text-align: center;
+}
+
+.footer-about {
+    background: #211d54bd;
+    margin-top: 1.9em;
     height: 30px;
     padding: 10px;
     color: #e6e2e5;
@@ -145,6 +171,8 @@ h1{
     line-height: 1em;
     margin-left: -50%;
 }
+
+
 
 
  
