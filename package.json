@@ -1,0 +1,23 @@
+{
+  "name": "layla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beach1208/Infinity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beach1208/Infinity/issues"
+  },
+  "homepage": "https://github.com/beach1208/Infinity#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

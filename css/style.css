@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  background: #2e335b;
+}
+
+/* Global elements */
+/* .container {
+      max-width: 1140px;
+      width: 80%;
+      margin: 0 auto;
+  } */
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* section { padding: 80px 0;} */
+li {
+  list-style: none;
+}
+
+/* NAVIGATION BAR */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #2e335b;
+}
+
+nav li {
+  padding: 20px;
+}
+
+nav a {
+  color: #eae1d3;
+  text-decoration: none;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: #eae1d3;
+  padding: 20px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* HEADER */
+header {
+  background-image: linear-gradient(rgba(76, 74, 71, 0.54), rgba(243, 227, 196, 0.32)), url(../img/ballet-second.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+
+.top-title {
+  width: 100%;
+  /* height: 100px; */
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+}
+
+.top-title h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #8b8b8c;
+  letter-spacing: 15px;
+  font-size: 7rem;
+  font-family: 'EB Garamond', serif;
+}
+
+/* Welcome section */
+#welcome-message {
+  padding: 10em 0;
+}
+
+#about-class {
+  background: #fafafa;
+}
+
+.intro-card {
+  display: flex;
+  padding: 2em;
+  margin: 0 20px 0 0;
+}
+
+.welcome-img {
+  margin: 0 20px 0 0;
+}
+
+.intro-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.intro-card:nth-child(even) .welcome-img {
+  margin: 0 0 0 20px;
+}
+
+.welcome-img {
+  max-width: 100%;
+  width: auto;
+  height: 20em;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box h3 {
+  color: #bfaf95;
+  font-size: 3em;
+}
+
+/*////////////////  Join section  /////////////*/
+#join-section {
+  background-image: linear-gradient(rgba(160, 148, 148, 0.836), rgba(251, 247, 247, 0.274)), url(../img/ballet-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+.join-message {
+  max-width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+}
+
+.join-btn {
+  width: 10em;
+  height: auto;
+  padding: 1em;
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+#CONTACT {
+  background: rgba(230, 211, 196, 0.36);
+}
+
+/* FOOTER */
+.footer {
+  background: #2e335b;
+  height: 2em;
+  padding: 10px;
+  color: #e6e2e5;
+  text-align: center;
+}
+
+/*////////////////  About section  /////////////*/
+.column {
+  height: 100vh;
+  width: 100%;
+}
+
+.left {
+  background-image: url(../img/about2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.about-title {
+  padding: 5rem;
+  font-size: 5rem;
+  line-height: 5rem;
+  margin-left: -50%;
+}
+
+/*////////////////  Class price Section  /////////////*/
+.class-header {
+  background: url(../img/classic-dance-2079980_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.section-plans {
+  background-color: #f4f4f4;
+  padding: 5rem 0;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+  padding-bottom: 1rem;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+  background-color: #2e335b;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+  margin-top: 1rem;
+}
+
+.plan-box h3 {
+  color: #f3c282;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 100;
+  color: #fff2dd;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 10px 10px;
+}
+
+.signup-btn,
+.join-btn {
+  background: #f3be68;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: all .5s;
+}
+
+.signup-btn:hover {
+  background: #ffffff;
+  color: #2e335b;
+  border: 1px solid #f3be68;
+}
+
+/* ================ Class Schedule Section ======================== */
+.schedule-header {
+  background: url(../img/scheduleheader.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 50vh;
+}
+
+#table-class-price {
+  display: block;
+}
+
+.table-schedule {
+  position: relative;
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.class-schedule {
+  border-bottom: 1px solid #bdbdbd;
+  align-items: center;
+}
+
+.class-schedule h2,
+.class-schedule p {
+  height: 100%;
+  text-align: left;
+  padding: 2rem 0;
+  font-family: "ButlerReg", Times, serif;
+}
+
+.class-schedule h2 {
+  font-size: 2rem;
+  width: 20%;
+  color: #cab396;
+}
+
+.class-schedule p {
+  font-size: 1em;
+  width: 20%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_btn {
+  background: #2e335b;
+  color: #bfaf95;
+  display: block;
+  padding: .6rem 2rem;
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  text-align: center;
+  transition: all .5s;
+  border: 1px solid #2e335b;
+  text-transform: uppercase;
+}
+
+.book_btn:hover {
+  background: #ffffff;
+}
+
+/* ================ Contact Section ======================== */
+.contact-header {
+  background: url(../img/contactHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+/*  */
+@media all and (min-width: 600px) {
+  .about-wrapper {
+    display: flex;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .class-schedule p:last-child {
+    width: 100%;
+    display: inline-block;
+  }
+  .class-schedule h2 {
+    font-size: 1rem;
+    width: 25%;
+  }
+  .class-schedule p {
+    width: 25%;
+  }
+  .signup-btn {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .intro-card {
+    flex-wrap: wrap;
+    padding: 1em;
+    margin: 0;
+    display: inline-block;
+  }
+  .welcome-img {
+    margin: 0;
+    display: inline-block;
+  }
+  .intro-card:nth-child(even) .welcome-img {
+    margin: 0;
+  }
+  .welcome-img {
+    max-width: 100%;
+    width: auto;
+    height: 10em;
+    opacity: 0.8;
+  }
+  .class-schedule h2 {
+    font-size: .9rem;
+    width: 20%;
+  }
+  .class-schedule p {
+    width: 20%;
+  }
+}
+
+@media all and (max-width: 860px) {
+  .class-schedule,
+  .book_btn {
+    font-size: .7rem;
+    padding: .8rem 1rem;
+  }
+}
