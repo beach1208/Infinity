@@ -16,16 +16,9 @@ body {
 
 .wrapper {
     overflow: hidden;
-    background: $main-color;
 }
 
 /* Global elements */
-
-/* .container {
-      max-width: 1140px;
-      width: 80%;
-      margin: 0 auto;
-  } */
 
 .row {
     max-width: 1140px;
@@ -55,7 +48,22 @@ li {
 
 /* NAVIGATION BAR */
 
-nav {
+#main-nav {
+    #main-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; // background-color: $main-color;
+    }
+    li {
+        padding: 20px;
+    }
+    a {
+        color: $nav-link-color;
+        text-decoration: none;
+    }
+}
+
+#menu-nav {
     ul {
         display: flex;
         flex-direction: row;
@@ -107,10 +115,10 @@ nav {
 /* HEADER */
 
 header {
-    background-image: linear-gradient(rgba(76, 74, 71, 0.54), rgba(243, 227, 196, 0.32)), url(../img/ballet-second.jpg);
-    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(55, 62, 119, 0.55)), url(../img/mainheader.jpg);
+    background-position: top;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
 }
 
 .top-title {
@@ -127,16 +135,38 @@ header {
         text-align: center;
         color: #ffffff;
         text-shadow: 2px 2px #8b8b8c;
-        letter-spacing: 15px;
-        font-size: 7rem;
+        letter-spacing: 10px;
+        font-size: 6rem;
         font-family: 'EB Garamond', serif;
     }
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
 }
 
 /* Welcome section */
 
 #welcome-message {
     padding: 10em 0;
+    h2 {
+        color: $main-color;
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+    }
+    h2:before,
+    h2:after {
+        border-top: 1px solid;
+        content: "";
+        flex-grow: 1;
+    }
+    h2:before,
+    h2:after {
+        margin-left: 5rem;
+        margin-right: 2rem;
+    }
 }
 
 #about-class {
@@ -239,8 +269,8 @@ header {
 /*////////////////  Class price Section  /////////////*/
 
 .class-header {
-    background: url(../img/classic-dance-2079980_1920.jpg);
-    background-position: center;
+    background: url(../img/priceheader.jpg);
+    background-position-y: 60%;
     background-size: cover;
     height: 50vh;
 }
@@ -382,9 +412,10 @@ header {
 /* ================ Contact Section ======================== */
 
 .contact-header {
-    background: url(../img/contactHeader.jpg);
-    background-position: center;
+    background: url(../img/contact.jpg);
+    background-position-y: 60%;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 50vh;
 }
 
