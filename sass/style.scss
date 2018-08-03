@@ -50,9 +50,7 @@ li {
 
 #main-nav {
     #main-ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; // background-color: $main-color;
+        @include flex-menu;
     }
     li {
         padding: 20px;
@@ -65,9 +63,7 @@ li {
 
 #menu-nav {
     ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex-menu;
         background-color: $main-color;
     }
     li {

@@ -2,3 +2,9 @@
 $main-color:#2e335b;
 $nav-link-color:#eae1d3;
 //font
+//mixin
+@mixin flex-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
