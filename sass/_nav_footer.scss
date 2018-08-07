@@ -66,9 +66,8 @@
 
 ///footer style///
 .footer {
-    background: #2e335b;
-    height: 2em;
-    padding: 10px;
-    color: #e6e2e5;
+    background: $main-color;
+    padding: 2rem;
+    color: $white-color;
     text-align: center;
 }
