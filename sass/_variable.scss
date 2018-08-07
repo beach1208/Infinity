@@ -1,10 +1,13 @@
-// color 
+// color style
 $main-color:#2e335b;
-$nav-link-color:#eae1d3;
+$nav-link-color:#c57da0;
+$p-text-color: #4a4a4a;
+$white-color: #ffffff;
+$yellow-title: #bfaf95;
+//padding margin style
 //font
-//mixin
-@mixin flex-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+$textdeco: none;
+$pfont:'PT Sans',
+sans-serif;
+$priceList: 'Roboto',
+sans-serif;

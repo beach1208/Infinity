@@ -1,0 +1,15 @@
+/* ================ Contact Section ======================== */
+
+.contact-header {
+    background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/contact.jpg);
+    background-position-y: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    h1 {
+        @include title-font;
+        @include vertical-center;
+        color: $white-color;
+        font-size: 4.5rem;
+    }
+}

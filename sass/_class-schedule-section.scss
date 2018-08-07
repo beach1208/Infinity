@@ -1,0 +1,70 @@
+/* ================ Class Schedule Section ======================== */
+
+.schedule-header {
+    background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/scheduleheader.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 50vh;
+    h1 {
+        @include title-font;
+        @include vertical-center;
+        color: $white-color;
+        font-size: 4.5rem;
+    }
+}
+
+#table-class-price {
+    display: block;
+}
+
+.table-schedule {
+    position: relative;
+    max-width: 1400px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.class-schedule {
+    border-bottom: 1px solid #bdbdbd;
+    align-items: center;
+    h2,
+    p {
+        height: 100%;
+        text-align: left;
+        padding: 2rem 0;
+        font-family: "ButlerReg", Times, serif;
+    }
+    h2 {
+        font-size: 2rem;
+        width: 20%;
+        color: $yellow-title;
+    }
+    p {
+        font-size: 1em;
+        width: 20%;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book_btn {
+    background: $main-color;
+    color: $yellow-title;
+    display: block;
+    padding: .6rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: center;
+    transition: all .5s;
+    border: 1px solid #2e335b;
+    text-transform: uppercase;
+    &:hover {
+        background: #ffffff;
+    }
+}

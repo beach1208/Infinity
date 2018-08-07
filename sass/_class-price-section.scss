@@ -1,0 +1,80 @@
+/*================ Class price Section  ==================*/
+
+.class-header {
+    background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/priceheader.jpg);
+    background-position-y: 60%;
+    background-size: cover;
+    height: 50vh;
+    h1 {
+        @include title-font;
+        @include vertical-center;
+        color: $white-color;
+        font-size: 4.5rem;
+    }
+}
+
+.section-plans {
+    background-color: #f4f4f4;
+    padding: 5rem 0;
+}
+
+.plan-box {
+    background-color: $white-color;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+    padding-bottom: 1rem;
+    div {
+        padding: 1rem;
+        border-bottom: 1px solid #e8e8e8;
+        &:first-child {
+            background-color: $main-color;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
+        }
+        &:last-child {
+            text-align: center;
+            border: 0;
+            margin-top: 1rem;
+        }
+    }
+    h3 {
+        color: $yellow-title;
+        @include title-font;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+    }
+}
+
+.plan-price {
+    font-size: 3rem;
+    margin: 1rem 1rem;
+    color: #fff2dd;
+    span {
+        font-size: 1rem;
+    }
+}
+
+.plan-box ul {
+    list-style: none;
+    li {
+        padding: .8rem .8rem;
+        font-family: $priceList;
+        font-weight: 400;
+    }
+}
+
+.signup-btn {
+    background: $nav-link-color;
+    color: $white-color;
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.signup-btn:hover {
+    background: $white-color;
+    color: $nav-link-color;
+    border: 1px solid $nav-link-color;
+}

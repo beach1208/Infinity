@@ -1,88 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#top-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background: #2e335b;
+  padding: 10px;
 }
 
-html {
-  font-size: 16px;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
-.wrapper {
-  overflow: hidden;
-}
-
-/* Global elements */
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-.clearfix {
-  zoom: 1;
-}
-
-.clearfix:after {
-  content: '.';
-  clear: both;
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
-
-/* section { padding: 80px 0;} */
-li {
+#top-nav li {
+  padding-right: 10px;
   list-style: none;
 }
 
-/* NAVIGATION BAR */
 #main-nav #main-ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-#main-nav li {
+#main-nav #main-ul li {
+  border-top: 1px solid #2e335b;
+  border-bottom: 1px solid #2e335b;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   padding: 20px;
+  list-style: none;
 }
 
-#main-nav a {
-  color: #eae1d3;
-  text-decoration: none;
-}
-
-#menu-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #2e335b;
-}
-
-#menu-nav li {
-  padding: 20px;
-}
-
-#menu-nav a {
-  color: #eae1d3;
+#main-nav #main-ul a {
+  color: #2e335b;
   text-decoration: none;
 }
 
 .dropdown .dropbtn {
   border: none;
   outline: none;
-  color: #eae1d3;
+  color: #2e335b;
   padding: 20px;
   background-color: inherit;
   font-family: inherit;
+  border-top: 1px solid #2e335b;
+  border-bottom: 1px solid #2e335b;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 
 .dropdown-content {
@@ -111,133 +72,6 @@ li {
   display: block;
 }
 
-/* HEADER */
-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(55, 62, 119, 0.55)), url(../img/mainheader.jpg);
-  background-position: top;
-  background-size: cover;
-  height: 100vh;
-}
-
-.top-title {
-  width: 100%;
-  /* height: 100px; */
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  overflow: auto;
-}
-
-.top-title h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 2px 2px #8b8b8c;
-  letter-spacing: 10px;
-  font-size: 6rem;
-  font-family: 'EB Garamond', serif;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-/* Welcome section */
-#welcome-message {
-  padding: 10em 0;
-}
-
-#welcome-message h2 {
-  color: #2e335b;
-  display: flex;
-  align-items: center;
-  font-size: 3rem;
-}
-
-#welcome-message h2:before,
-#welcome-message h2:after {
-  border-top: 1px solid;
-  content: "";
-  flex-grow: 1;
-}
-
-#welcome-message h2:before,
-#welcome-message h2:after {
-  margin-left: 5rem;
-  margin-right: 2rem;
-}
-
-#about-class {
-  background: #fafafa;
-}
-
-.intro-card {
-  display: flex;
-  padding: 2em;
-  margin: 0 20px 0 0;
-}
-
-.welcome-img {
-  margin: 0 20px 0 0;
-}
-
-.intro-card:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.intro-card:nth-child(even) .welcome-img {
-  margin: 0 0 0 20px;
-}
-
-.welcome-img {
-  max-width: 100%;
-  width: auto;
-  height: 20em;
-  opacity: 0.8;
-  align-items: center;
-  justify-content: center;
-}
-
-.text-box h3 {
-  color: #bfaf95;
-  font-size: 3em;
-}
-
-/*////////////////  Join section  /////////////*/
-#join-section {
-  background-image: linear-gradient(rgba(160, 148, 148, 0.836), rgba(251, 247, 247, 0.274)), url(../img/ballet-header.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 90vh;
-  position: relative;
-}
-
-.join-message {
-  max-width: 100%;
-  height: auto;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  overflow: auto;
-}
-
-.join-btn {
-  width: 10em;
-  height: auto;
-  padding: 1em;
-  margin-top: 1em;
-  overflow: hidden;
-}
-
-#CONTACT {
-  background: rgba(230, 211, 196, 0.36);
-}
-
-/* FOOTER */
 .footer {
   background: #2e335b;
   height: 2em;
@@ -246,7 +80,7 @@ h1 {
   text-align: center;
 }
 
-/*////////////////  About section  /////////////*/
+/*================== About section =====================/*/
 .column {
   height: 100vh;
   width: 100%;
@@ -258,19 +92,66 @@ h1 {
   background-size: cover;
 }
 
-.about-title {
-  padding: 5rem;
-  font-size: 5rem;
-  line-height: 5rem;
-  margin-left: -50%;
+.right {
+  background: #e6e2e5;
 }
 
-/*////////////////  Class price Section  /////////////*/
+.info {
+  padding: 2rem;
+}
+
+.info h2 {
+  color: #2e335b;
+  font-size: 4.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.info h2:first-child:after {
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
+  margin-left: 2rem;
+  margin-right: 6rem;
+}
+
+.info h2:nth-child(2):before {
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.info p {
+  padding: 2rem;
+  color: #4a4a4a;
+  font-family: "PT Sans", sans-serif;
+  color: #4a4a4a;
+}
+
+/*================ Class price Section  ==================*/
 .class-header {
-  background: url(../img/priceheader.jpg);
+  background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/priceheader.jpg);
   background-position-y: 60%;
   background-size: cover;
   height: 50vh;
+}
+
+.class-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  max-width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  color: #ffffff;
+  font-size: 4.5rem;
 }
 
 .section-plans {
@@ -279,7 +160,7 @@ h1 {
 }
 
 .plan-box {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
@@ -288,14 +169,14 @@ h1 {
 }
 
 .plan-box div {
-  padding: 15px;
+  padding: 1rem;
   border-bottom: 1px solid #e8e8e8;
 }
 
 .plan-box div:first-child {
   background-color: #2e335b;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 }
 
 .plan-box div:last-child {
@@ -305,24 +186,21 @@ h1 {
 }
 
 .plan-box h3 {
-  color: #f3c282;
+  color: #bfaf95;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
 }
 
 .plan-price {
-  font-size: 300%;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  font-weight: 100;
+  font-size: 3rem;
+  margin: 1rem 1rem;
   color: #fff2dd;
 }
 
 .plan-price span {
-  font-size: 30%;
-  font-weight: 300;
-}
-
-.plan-price-meal {
-  font-size: 80%;
+  font-size: 1rem;
 }
 
 .plan-box ul {
@@ -330,30 +208,45 @@ h1 {
 }
 
 .plan-box ul li {
-  padding: 10px 10px;
+  padding: .8rem .8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
-.signup-btn,
-.join-btn {
-  background: #f3be68;
+.signup-btn {
+  background: #c57da0;
   color: #ffffff;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border-radius: 50px;
   transition: all .5s;
 }
 
 .signup-btn:hover {
   background: #ffffff;
-  color: #2e335b;
-  border: 1px solid #f3be68;
+  color: #c57da0;
+  border: 1px solid #c57da0;
 }
 
 /* ================ Class Schedule Section ======================== */
 .schedule-header {
-  background: url(../img/scheduleheader.jpg);
+  background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/scheduleheader.jpg);
   background-position: top;
   background-size: cover;
   height: 50vh;
+}
+
+.schedule-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  max-width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  color: #ffffff;
+  font-size: 4.5rem;
 }
 
 #table-class-price {
@@ -384,7 +277,7 @@ h1 {
 .class-schedule h2 {
   font-size: 2rem;
   width: 20%;
-  color: #cab396;
+  color: #bfaf95;
 }
 
 .class-schedule p {
@@ -418,14 +311,239 @@ h1 {
 
 /* ================ Contact Section ======================== */
 .contact-header {
-  background: url(../img/contact.jpg);
+  background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/contact.jpg);
   background-position-y: 60%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
 }
 
-/*  */
+.contact-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  max-width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  color: #ffffff;
+  font-size: 4.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+body .wrapper {
+  overflow: hidden;
+}
+
+body .row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+body a {
+  text-decoration: none;
+}
+
+/* ================ HEADER ====================*/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(55, 62, 119, 0.55)), url(../img/mainheader.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.header-wrapper {
+  padding: 5%;
+}
+
+.top-title {
+  width: 100%;
+  overflow: auto;
+}
+
+.top-title h1 {
+  margin: 0;
+  padding: 3rem;
+  text-align: center;
+  color: #2e335b;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  font-family: serif;
+}
+
+/* ============== Welcome section  =================*/
+#welcome-message {
+  padding: 6rem 0;
+}
+
+#welcome-message h2 {
+  color: #2e335b;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+#welcome-message h2:before, #welcome-message h2:after {
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
+  margin-left: 5rem;
+  margin-right: 2rem;
+}
+
+#welcome-message p {
+  padding: 5rem;
+  font-family: "PT Sans", sans-serif;
+  color: #4a4a4a;
+  color: #4a4a4a;
+}
+
+#about-class {
+  background: #fafafa;
+}
+
+.intro-card {
+  display: flex;
+  padding: 2rem;
+}
+
+.intro-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.welcome-img {
+  max-width: 100%;
+  width: 50%;
+  height: 400px;
+  object-fit: contain;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  padding: 2rem;
+}
+
+.text-box h3 {
+  color: #bfaf95;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.text-box h3:after {
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+}
+
+.text-box p {
+  padding: 2rem;
+  font-family: "PT Sans", sans-serif;
+  color: #4a4a4a;
+}
+
+.text-box .intro-btn {
+  background: #c57da0;
+  padding: 1rem 2rem;
+  transition: all .5s;
+  margin: 2rem;
+}
+
+.text-box .intro-btn a {
+  color: #ffffff;
+}
+
+.text-box .intro-btn:hover {
+  background: #ffffff;
+  color: #c57da0;
+  border: 1px solid #c57da0;
+}
+
+.text-box .intro-btn:hover a {
+  color: #c57da0;
+}
+
+/*====================== Join section  ===========================*/
+#join-section {
+  background-image: linear-gradient(rgba(25, 25, 25, 0.836), rgba(90, 87, 87, 0.274)), url(../img/ballet-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+#join-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.join-message {
+  max-width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+}
+
+.join-message h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.join-message p {
+  padding: 2rem;
+  color: #fff;
+}
+
+.join-message .join-btn {
+  background: #c57da0;
+  padding: 1rem 2rem;
+  transition: all .5s;
+  margin: 0 auto;
+  display: block;
+}
+
+.join-message .join-btn a {
+  color: #ffffff;
+}
+
+.join-message .join-btn:hover {
+  background: #ffffff;
+  color: #c57da0;
+  border: 1px solid #c57da0;
+}
+
+.join-message .join-btn:hover a {
+  color: #c57da0;
+}
+
 @media all and (min-width: 600px) {
   .about-wrapper {
     display: flex;
@@ -465,10 +583,8 @@ h1 {
     margin: 0;
   }
   .welcome-img {
-    max-width: 100%;
-    width: auto;
-    height: 10em;
-    opacity: 0.8;
+    width: 100%;
+    object-fit: cover;
   }
   .class-schedule h2 {
     font-size: .9rem;

@@ -1,0 +1,54 @@
+//mixin
+@mixin title-font {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+@mixin p-font {
+    font-family: $pfont;
+    color: $p-text-color;
+}
+
+@mixin flex-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin border-top-bottom {
+    border-top: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
+}
+
+@mixin lp-button {
+    background: $nav-link-color;
+    padding: 1rem 2rem;
+    transition: all .5s;
+}
+
+@mixin lp-button-hover {
+    background: $white-color;
+    color: $nav-link-color;
+    border: 1px solid $nav-link-color;
+}
+
+@mixin border-style {
+    border-top: 1px solid;
+    content: "";
+    flex-grow: 1;
+}
+
+@mixin vertical-center {
+    max-width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+}
+
+@mixin background-position {
+    background-position: center;
+    background-size: cover;
+}
