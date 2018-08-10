@@ -36,6 +36,9 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(55, 62, 119, 0.55)), url(../img/mainheader.jpg);
     @include background-position;
     height: 80vh;
+    @include max-screen($breakpPc-max) {
+        height: 50vh;
+    }
 }
 
 .header-wrapper {
@@ -66,10 +69,26 @@ header {
         align-items: center;
         font-size: 3rem;
         @include title-font;
+        @include screen($breakpMobilePortrait-min, $breakpMobilePortrait-max) {
+            font-size: 1.3rem;
+        }
+        @include screen($breakpMobileLand-min, $breakpTablet-max) {
+            font-size: 2rem;
+        } // @include screen($breakpTablet-min, $breakpTablet-max) {
+        //     font-size: 2rem;
+        // }
         &:before,
         &:after {
             @include border-style;
-            margin-left: 5rem;
+            @include screen($breakpMobilePortrait-min, $breakpMobilePortrait-max) {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            @include screen($breakpMobileLand-min, $breakpMobileLand-max) {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+            margin-left: 4rem;
             margin-right: 2rem;
         }
     }
@@ -88,10 +107,15 @@ header {
 .intro-card {
     display: flex;
     padding: 2rem;
-}
-
-.intro-card:nth-child(even) {
-    flex-direction: row-reverse;
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    @include max-screen($breakpMobileLand-max) {
+        flex-wrap: wrap;
+        padding: 1em;
+        margin: 0;
+        display: inline-block;
+    }
 }
 
 .welcome-img {
@@ -102,21 +126,34 @@ header {
     opacity: 0.8;
     align-items: center;
     justify-content: center;
+    @include max-screen($breakpMobileLand-max) {
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .text-box {
     padding: 2rem;
     h3 {
         color: $yellow-title;
-        font-size: 3em;
+        font-size: 3rem;
         display: flex;
         align-items: center;
         padding-left: 2rem;
         @include title-font;
+        @include screen($breakpMobilePortrait-min, $breakpMobilePortrait-max) {
+            //320px - 480px
+            font-size: 1.5rem;
+        }
         &:after {
             @include border-style;
             margin-left: 2rem;
             margin-right: 1.5rem;
+            @include max-screen($breakpMobilePortrait-min) {
+                margin-right: 0;
+            }
         }
     }
     p {
@@ -126,6 +163,10 @@ header {
     .intro-btn {
         @include lp-button;
         margin: 2rem;
+        @include max-screen($breakpMobileLand-max) {
+            margin: 0 auto;
+            display: block;
+        }
         a {
             color: $white-color;
         }
@@ -204,23 +245,6 @@ header {
 }
 
 @media all and (max-width: 760px) {
-    .intro-card {
-        flex-wrap: wrap;
-        padding: 1em;
-        margin: 0;
-        display: inline-block;
-    }
-    .welcome-img {
-        margin: 0;
-        display: inline-block;
-    }
-    .intro-card:nth-child(even) .welcome-img {
-        margin: 0;
-    }
-    .welcome-img {
-        width: 100%;
-        object-fit: cover;
-    }
     .class-schedule {
         h2 {
             font-size: .9rem;

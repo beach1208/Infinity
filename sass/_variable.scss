@@ -11,3 +11,17 @@ $pfont:'PT Sans',
 sans-serif;
 $priceList: 'Roboto',
 sans-serif;
+//======= media queries =======
+/** =========
+  Media Queries
+========= **/
+
+$breakpMobilePortrait-min: 320px;
+$breakpMobilePortrait-mid-max: 400px;
+$breakpMobilePortrait-max: 480px;
+$breakpMobileLand-min: 481px;
+$breakpMobileLand-max: 600px;
+$breakpTablet-min: 601px;
+$breakpTablet-max: 960px;
+$breakpPc-min: 961px;
+$breakpPc-max: 1024px;

@@ -1,4 +1,5 @@
-//mixin
+@import "variable";
+//========== mixin ===============//
 @mixin title-font {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -51,4 +52,26 @@
 @mixin background-position {
     background-position: center;
     background-size: cover;
+}
+
+/* ==============
+   Media queries
+  ============= */
+
+@mixin max-screen($breakPoint) {
+    @media screen and (max-width: $breakPoint) {
+        @content;
+    }
+}
+
+@mixin min-screen($breakPoint) {
+    @media screen and (min-width: $breakPoint) {
+        @content;
+    }
+}
+
+@mixin screen($breakPointMin, $breakPointMax) {
+    @media screen and (min-width: $breakPointMin) and (max-width: $breakPointMax) {
+        @content;
+    }
 }

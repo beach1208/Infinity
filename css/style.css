@@ -1,3 +1,12 @@
+/** =========
+  Media Queries
+========= **/
+/** =========
+  Media Queries
+========= **/
+/* ==============
+   Media queries
+  ============= */
 #top-nav ul {
   display: flex;
   flex-direction: row;
@@ -331,6 +340,70 @@
   font-size: 4.5rem;
 }
 
+.col {
+  width: 100%;
+}
+
+#signup-form {
+  border: 1px solid #2e335b;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+label,
+input,
+textarea {
+  margin: .5rem 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #2e335b;
+  outline: 0;
+  padding: 10px;
+}
+
+input:focus {
+  font-size: 1.2rem;
+}
+
+textarea {
+  padding: 10px;
+}
+
+.submit-btn {
+  background-color: #2e335b;
+  color: white;
+  border: none;
+  flex-basis: 100%;
+  font-size: 15pt;
+  font-weight: bold;
+  margin: 10px 3px;
+  padding: 15px;
+}
+
+@media all and (min-width: 700px) {
+  .contact-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .submit-btn {
+    align-content: center;
+  }
+  .submit-btn button {
+    flex-grow: -1;
+    flex-basis: 10%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -367,6 +440,12 @@ header {
   height: 80vh;
 }
 
+@media screen and (max-width: 1024px) {
+  header {
+    height: 50vh;
+  }
+}
+
 .header-wrapper {
   padding: 5%;
 }
@@ -400,12 +479,38 @@ header {
   font-weight: 700;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #welcome-message h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  #welcome-message h2 {
+    font-size: 2rem;
+  }
+}
+
 #welcome-message h2:before, #welcome-message h2:after {
   border-top: 1px solid;
   content: "";
   flex-grow: 1;
-  margin-left: 5rem;
+  margin-left: 4rem;
   margin-right: 2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #welcome-message h2:before, #welcome-message h2:after {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  #welcome-message h2:before, #welcome-message h2:after {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 #welcome-message p {
@@ -428,6 +533,15 @@ header {
   flex-direction: row-reverse;
 }
 
+@media screen and (max-width: 600px) {
+  .intro-card {
+    flex-wrap: wrap;
+    padding: 1em;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
 .welcome-img {
   max-width: 100%;
   width: 50%;
@@ -438,18 +552,33 @@ header {
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .welcome-img {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 .text-box {
   padding: 2rem;
 }
 
 .text-box h3 {
   color: #bfaf95;
-  font-size: 3em;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   padding-left: 2rem;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .text-box h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .text-box h3:after {
@@ -458,6 +587,12 @@ header {
   flex-grow: 1;
   margin-left: 2rem;
   margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 320px) {
+  .text-box h3:after {
+    margin-right: 0;
+  }
 }
 
 .text-box p {
@@ -471,6 +606,13 @@ header {
   padding: 1rem 2rem;
   transition: all .5s;
   margin: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .text-box .intro-btn {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .text-box .intro-btn a {
@@ -568,23 +710,6 @@ header {
 }
 
 @media all and (max-width: 760px) {
-  .intro-card {
-    flex-wrap: wrap;
-    padding: 1em;
-    margin: 0;
-    display: inline-block;
-  }
-  .welcome-img {
-    margin: 0;
-    display: inline-block;
-  }
-  .intro-card:nth-child(even) .welcome-img {
-    margin: 0;
-  }
-  .welcome-img {
-    width: 100%;
-    object-fit: cover;
-  }
   .class-schedule h2 {
     font-size: .9rem;
     width: 20%;

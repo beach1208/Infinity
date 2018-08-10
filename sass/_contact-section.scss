@@ -13,3 +13,80 @@
         font-size: 4.5rem;
     }
 }
+
+.col {
+    width: 100%;
+}
+
+// .left-col {
+//     background: gray;
+// }
+// .right-col {
+//     background: pink;
+// }
+#signup-form {
+    border: 1px solid $main-color;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+
+label,
+input,
+textarea {
+    margin: .5rem 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid $main-color;
+    outline: 0;
+    padding: 10px;
+    &:focus {
+        font-size: 1.2rem;
+    }
+}
+
+textarea {
+    padding: 10px;
+}
+
+.submit-btn {
+    background-color: $main-color;
+    color: white;
+    border: none;
+    flex-basis: 100%;
+    font-size: 15pt;
+    font-weight: bold;
+    margin: 10px 3px;
+    padding: 15px;
+}
+
+@media all and (min-width: 700px) {
+    .contact-wrapper {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .submit-btn {
+        align-content: center;
+        button {
+            flex-grow: -1;
+            flex-basis: 10%;
+        }
+    } // contact-wrapper {
+    //     display: flex;
+    // }
+}
+
+// @media (max-width: 425px) {
+//     .submit-btn {
+//         flex: 1 0 100%;
+//     }
+// }
