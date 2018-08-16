@@ -36,7 +36,7 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(55, 62, 119, 0.55)), url(../img/mainheader.jpg);
     @include background-position;
     height: 80vh;
-    @include max-screen($breakpPc-max) {
+    @include max-screen($breakpPc-max-1024) {
         height: 50vh;
     }
 }
@@ -63,28 +63,29 @@ header {
 
 #welcome-message {
     padding: 6rem 0;
+    @include screen($breakp-mobile-min-320, $breakpMobileLand-max-600) {
+        padding: 2rem 0;
+    }
     h2 {
         color: $main-color;
         display: flex;
         align-items: center;
         font-size: 3rem;
         @include title-font;
-        @include screen($breakpMobilePortrait-min, $breakpMobilePortrait-max) {
+        @include screen($breakp-mobile-min-320, $breakp-mobile-max-480) {
             font-size: 1.3rem;
         }
-        @include screen($breakpMobileLand-min, $breakpTablet-max) {
+        @include screen($breakpMobileLand-min-481, $breakpTablet-max-960) {
             font-size: 2rem;
-        } // @include screen($breakpTablet-min, $breakpTablet-max) {
-        //     font-size: 2rem;
-        // }
+        }
         &:before,
         &:after {
             @include border-style;
-            @include screen($breakpMobilePortrait-min, $breakpMobilePortrait-max) {
+            @include screen($breakp-mobile-min-320, $breakp-mobile-max-480) {
                 margin-left: 1rem;
                 margin-right: 1rem;
             }
-            @include screen($breakpMobileLand-min, $breakpMobileLand-max) {
+            @include screen($breakpMobileLand-min-481, $breakpMobileLand-max-600) {
                 margin-left: 2rem;
                 margin-right: 2rem;
             }
@@ -110,7 +111,7 @@ header {
     &:nth-child(even) {
         flex-direction: row-reverse;
     }
-    @include max-screen($breakpMobileLand-max) {
+    @include max-screen($breakpMobileLand-max-600) {
         flex-wrap: wrap;
         padding: 1em;
         margin: 0;
@@ -126,7 +127,7 @@ header {
     opacity: 0.8;
     align-items: center;
     justify-content: center;
-    @include max-screen($breakpMobileLand-max) {
+    @include max-screen($breakpMobileLand-max-600) {
         margin: 0;
         display: inline-block;
         width: 100%;
@@ -143,27 +144,38 @@ header {
         align-items: center;
         padding-left: 2rem;
         @include title-font;
-        @include screen($breakpMobilePortrait-min, $breakpMobilePortrait-max) {
+        @include screen($breakp-mobile-min-320, $breakp-mobile-max-480) {
             //320px - 480px
             font-size: 1.5rem;
+        }
+        @include screen($breakpTablet-min-601, $breakpTablet-max-960) {
+            font-size: 1.8rem;
+            padding: 0;
         }
         &:after {
             @include border-style;
             margin-left: 2rem;
             margin-right: 1.5rem;
-            @include max-screen($breakpMobilePortrait-min) {
-                margin-right: 0;
+            @include max-screen($breakp-mobile-min-320) {
+                display: none;
+            }
+            @include screen($breakpTablet-min-601, $breakpTablet-max-960) {
+                margin-left: 1rem;
+                margin-right: 1.5rem;
             }
         }
     }
     p {
         padding: 2rem;
         @include p-font;
+        @include screen($breakpTablet-min-601, $breakpTablet-max-960) {
+            padding: 1rem 0 0 0;
+        }
     }
     .intro-btn {
         @include lp-button;
         margin: 2rem;
-        @include max-screen($breakpMobileLand-max) {
+        @include max-screen($breakpMobileLand-max-600) {
             margin: 0 auto;
             display: block;
         }
@@ -185,22 +197,38 @@ header {
     background-image: linear-gradient(rgba(25, 25, 25, 0.836), rgba(90, 87, 87, 0.274)), url(../img/ballet-header.jpg);
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
     position: relative;
-    h3 {
-        @include title-font;
+    @include max-screen($breakpPc-max-1024) {
+        height: 60vh;
     }
 }
 
 .join-message {
     @include vertical-center;
+    @include screen($breakp-mobile-min-320, $breakp-mobile-max-480) {
+        width: 100%;
+    }
     h3 {
         font-size: 2.5rem;
         color: #ffffff;
+        @include title-font;
+        @include screen($breakp-mobile-min-320, $breakp-mobile-max-480) {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        @include screen($breakpMobileLand-min-481, $breakpMobileLand-max-600) {
+            font-size: 2rem;
+            text-align: center;
+        }
     }
     p {
         padding: 2rem;
         color: #fff;
+        @include max-screen($breakpMobileLand-max-600) {
+            padding: 1rem;
+            text-align: center;
+        }
     }
     .join-btn {
         @include lp-button;
@@ -218,12 +246,6 @@ header {
     }
 }
 
-@media all and (min-width: 600px) {
-    .about-wrapper {
-        display: flex;
-    }
-}
-
 @media all and (max-width: 550px) {
     .class-schedule {
         p:last-child {
@@ -237,10 +259,6 @@ header {
         p {
             width: 25%;
         }
-    }
-    .signup-btn {
-        display: inline-block;
-        width: 100%;
     }
 }
 

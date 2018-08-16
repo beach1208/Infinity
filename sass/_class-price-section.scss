@@ -21,10 +21,19 @@
 .plan-box {
     background-color: $white-color;
     border-radius: 5px;
-    width: 90%;
-    margin-left: 5%;
+    width: 30%;
+    margin: 0 1.5rem;
     box-shadow: 0 2px 2px #efefef;
     padding-bottom: 1rem;
+    @include max-screen($breakpMobileLand-max-767) {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    @include min-screen($breakpMobileLand-min-768) {
+        width: 27%;
+    }
     div {
         padding: 1rem;
         border-bottom: 1px solid #e8e8e8;
@@ -47,6 +56,15 @@
     }
 }
 
+.flex-box {
+    @include min-screen($breakpMobileLand-min-768) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+}
+
 .plan-price {
     font-size: 3rem;
     margin: 1rem 1rem;
@@ -54,23 +72,43 @@
     span {
         font-size: 1rem;
     }
+    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+        font-size: 2rem;
+    }
 }
 
 .plan-box ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
     li {
+        width: 100%;
+        align-items: center;
         padding: .8rem .8rem;
         font-family: $priceList;
         font-weight: 400;
+        @include screen($breakpMobileLand-min-768, $breakpTablet-max-960) {
+            font-size: 15px;
+        }
     }
 }
 
 .signup-btn {
     background: $nav-link-color;
     color: $white-color;
+    height: auto;
     padding: 1rem 4rem;
     border-radius: 50px;
     transition: all .5s;
+    @include max-screen($breakpMobileLand-max-767) {
+        display: inline-block;
+        width: 100%;
+        padding: 1rem 6rem;
+    }
+    @include screen($breakpMobileLand-min-768, $breakpTablet-max-960) {
+        padding: 1rem 2rem;
+    }
 }
 
 .signup-btn:hover {
@@ -78,3 +116,6 @@
     color: $nav-link-color;
     border: 1px solid $nav-link-color;
 }
+
+//カードコンテンツの高さを揃えるときはflexbox & align items stretch
+//height はなるべくauto
