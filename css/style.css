@@ -170,10 +170,35 @@
   left: 200px;
 }
 
+@media screen and (max-width: 400px) {
+  .info h2 .title-after::after {
+    left: 110px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .info h2 .title-after::after {
+    left: 130px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .info h2 .title-after::after {
+    left: 150px;
+  }
+}
+
 .info h2 .title-before {
   display: block;
   position: relative;
   margin-left: 5rem;
+}
+
+@media screen and (max-width: 400px) {
+  .info h2 .title-before {
+    margin-left: 2rem;
+  }
 }
 
 .info h2 .title-before::before {
@@ -188,28 +213,33 @@
 }
 
 @media screen and (max-width: 400px) {
-  .info h2 {
-    font-size: 2rem;
-    padding: 0 1rem;
+  .info h2 .title-before::before {
+    left: -70px;
+    width: 50px;
   }
 }
 
-@media screen and (min-width: 401px) and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .info h2 {
-    font-size: 2rem;
-    padding: none;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 960px) {
+  .info h2 {
+    font-size: 2.2rem;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .info h2 {
-    font-size: 2.5rem;
+    padding: 0 1.5rem;
   }
 }
 
 @media screen and (min-width: 961px) and (max-width: 1024px) {
   .info h2 {
-    padding: none;
+    font-size: 3rem;
   }
 }
 
@@ -485,10 +515,50 @@
   overflow: auto;
   color: #ffffff;
   font-size: 4.5rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-wrapper {
+    display: flex;
+  }
 }
 
 .col {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .right-col {
+    margin-top: 3rem;
+  }
+}
+
+.map-info {
+  padding: 0 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .map-info {
+    padding: 0;
+  }
+}
+
+.map-info .map2 {
+  padding-top: 3rem;
+}
+
+.map-info .map1,
+.map-info .map2 {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.map-info h2 {
+  color: #2e335b;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 
 #signup-form {
@@ -497,6 +567,9 @@
   flex-direction: column;
   margin-bottom: 1rem;
   padding: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 label,
@@ -526,26 +599,27 @@ textarea {
 
 .submit-btn {
   background-color: #2e335b;
-  color: white;
+  color: #bfaf95;
   border: none;
   flex-basis: 100%;
-  font-size: 15pt;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 10px 3px;
   padding: 15px;
+  transition: all .5s;
+  border: 1px solid #2e335b;
+  text-transform: uppercase;
 }
 
-@media all and (min-width: 700px) {
-  .contact-wrapper {
-    display: flex;
-  }
+.submit-btn:hover {
+  background: #ffffff;
 }
 
-@media (min-width: 768px) {
-  .submit-btn {
+@media screen and (min-width: 768px) {
+  .submit-btn .submit-btn {
     align-content: center;
   }
-  .submit-btn button {
+  .submit-btn .submit-btn button {
     flex-grow: -1;
     flex-basis: 10%;
   }
