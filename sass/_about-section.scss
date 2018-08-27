@@ -10,6 +10,7 @@
 .column {
     height: auto;
     width: 100%;
+    @include header-img-animation;
     @include screen($breakpTablet-min-601, $breakpTablet-max-960) {
         max-height: 100vh;
     }
@@ -38,11 +39,6 @@
 }
 
 .info {
-    // .title {
-    //     @include max-screen($breakp-mobile-mid-400) {
-    //         padding: 2rem;
-    //     }
-    // }
     height: auto;
     padding-top: 3rem;
     h2 {

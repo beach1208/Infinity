@@ -12,55 +12,41 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
 <body>
     <div class="wrapper">
-        <nav id="top-nav">
+        <nav>
             <ul>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-facebook" style="color:#e6e2e5"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-twitter" style="color: #e6e2e5"></i>
-                    </a>
-                </li>
-            </ul>
-
-
-        </nav>
-        <div class="top-title">
-            <h1>Layla Ballet</h1>
-        </div>
-        <nav id="main-nav">
-            <ul id="main-ul">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
                 </li>
-                <div class="dropdown">
-                    <button class="dropbtn">Class</button>
-                    <div class="dropdown-content">
-                        <li>
-                            <a href="class.html">Class Price</a>
-                        </li>
-                        <li>
-                            <a href="schedule.html">Class Schedule</a>
-                        </li>
-                    </div>
-                </div>
+                <li>
+                    <a href="class.html">Price</a>
+                </li>
+                <li>
+                    <a href="schedule.html">Schedule</a>
+                </li>
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
+            <div class="nav__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
+        <div class="top-title">
+            <img class="logo" src="../img/logo.png" alt="title-logo">
+        </div>
 
         <div class="header-wrapper">
             <div class="about-wrapper">
@@ -99,6 +85,7 @@
         </footer>
 
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

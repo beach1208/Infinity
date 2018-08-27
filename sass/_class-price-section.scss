@@ -4,12 +4,25 @@
     background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/priceheader.jpg);
     background-position-y: 60%;
     background-size: cover;
+    position: relative;
     height: 50vh;
+    @include header-img-animation;
+    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+        height: 30vh;
+    }
     h1 {
         @include title-font;
         @include vertical-center;
         color: $white-color;
         font-size: 4.5rem;
+        letter-spacing: 2px;
+        margin: 0;
+        @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+            font-size: 3.2rem;
+        }
+        @include max-screen($breakpMobileLand-max-767) {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -107,6 +120,9 @@
         padding: 1rem 6rem;
     }
     @include screen($breakpMobileLand-min-768, $breakpTablet-max-960) {
+        padding: 1rem 2rem;
+    }
+    @include max-screen($breakp-mobile-mid-400) {
         padding: 1rem 2rem;
     }
 }

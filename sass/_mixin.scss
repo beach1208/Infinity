@@ -16,11 +16,6 @@
     flex-wrap: wrap;
 }
 
-@mixin border-top-bottom {
-    border-top: 1px solid $main-color;
-    border-bottom: 1px solid $main-color;
-}
-
 @mixin lp-button {
     background: $nav-link-color;
     padding: 1rem 2rem;
@@ -52,6 +47,27 @@
 @mixin background-position {
     background-position: center;
     background-size: cover;
+}
+
+@mixin header-img-animation {
+    animation: bodyFadeIn 2s ease 0s 1 normal;
+    -webkit-animation: bodyFadeIn 2s ease 0s 1 normal;
+    @keyframes bodyFadeIn {
+        0% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1
+        }
+    }
+    @-webkit-keyframes bodyFadeIn {
+        0% {
+            opacity: 0
+        }
+        100% {
+            opacity: 1
+        }
+    }
 }
 
 /* ==============

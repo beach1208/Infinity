@@ -5,11 +5,24 @@
     background-position: top;
     background-size: cover;
     height: 50vh;
+    position: relative;
+    @include header-img-animation;
+    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+        height: 30vh;
+    }
     h1 {
         @include title-font;
         @include vertical-center;
         color: $white-color;
         font-size: 4.5rem;
+        letter-spacing: 2px;
+        margin: 0;
+        @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+            font-size: 3.2rem;
+        }
+        @include max-screen($breakpMobileLand-max-767) {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -42,7 +55,7 @@
     }
     p {
         font-size: 1em;
-        width: 20%;
+        width: 15%;
     }
 }
 
