@@ -73,9 +73,16 @@ sr.reveal('.join-message', {
 });
 
 
-sr.reveal('.left', {
+sr.reveal('.column', {
     delay: 200,
-    origin: 'left',
+    origin: 'bottom',
     easing: 'ease-in',
-    distance: '50%'
+    duration: 500,
+});
+
+sr.reveal('.plan-box', {
+    delay: 600,
+    origin: 'top',
+    easing: 'ease-in-out',
+    duration: 500,
 });

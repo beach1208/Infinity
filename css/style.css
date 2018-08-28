@@ -149,26 +149,6 @@ nav ul a:hover {
 .column {
   height: auto;
   width: 100%;
-  animation: bodyFadeIn 2s ease 0s 1 normal;
-  -webkit-animation: bodyFadeIn 2s ease 0s 1 normal;
-}
-
-@keyframes bodyFadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes bodyFadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
