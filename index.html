@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Layla Ballet Studio</title>
+    <title>Layla Ballet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -16,6 +16,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="../animsition/dist/css/animsition.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="../animsition/dist/js/animsition.min.js"></script>
+
+
 
 
 </head>
@@ -25,19 +33,19 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="animsition-link">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="about.html" class="animsition-link">About</a>
                 </li>
                 <li>
-                    <a href="class.html">Price</a>
+                    <a href="class.html" class="animsition-link">Price</a>
                 </li>
                 <li>
-                    <a href="schedule.html">Schedule</a>
+                    <a href="schedule.html" class="animsition-link">Schedule</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="animsition-link">Contact</a>
                 </li>
             </ul>
             <div class="nav__icon">
@@ -46,95 +54,128 @@
                 <span></span>
             </div>
         </nav>
-        <div class="top-title">
-            <img class="logo" src="../img/logo.png" alt="title-logo">
-        </div>
 
-        <div class="header-wrapper">
-            <header>
-            </header>
-        </div>
-
-        <section id="welcome-message">
-            <div class="row">
-                <div class="welcome-title">
-                    <h2>Welcome to Layla Ballet</h2>
-                    <p class="class-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-                        felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                        pede justo, fringilla vel, </p>
-                </div>
+        <div class="animsition">
+            <div class="top-title">
+                <img class="logo" src="../img/logo.png" alt="title-logo">
+            </div>
+            <div class="header-wrapper">
+                <header>
+                </header>
             </div>
 
-
-        </section>
-
-        <section id="about-class">
-            <div class="row">
-
-                <div class="intro-card right-card">
-                    <img class="welcome-img left-img" src="img/adultballet.jpg" alt="welcome photo">
-                    <div class="text-box">
-                        <h3>Adult Ballet</h3>
-                        <p class="class-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                            enim. Donec pede justo, fringilla vel, </p>
-                        <button class="intro-btn">
-                            <a href="schedule.html">Check Schedule</a>
-                        </button>
+            <section id="welcome-message">
+                <div class="row">
+                    <div class="welcome-title">
+                        <h2>Welcome to Layla Ballet</h2>
+                        <p class="class-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                            commodo
+                            ligula eget dolor. Aenean massa.
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Donec
+                            quam
+                            felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                            enim.
+                            Donec
+                            pede justo, fringilla vel, </p>
                     </div>
                 </div>
 
-                <div class="intro-card left-card">
-                    <img class="welcome-img right-img" src="img/welcome2.jpg" alt="welcome photo">
-                    <div class="text-box">
-                        <h3>Stretch Ballet</h3>
-                        <p class="class-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                            enim. Donec pede justo, fringilla vel, </p>
 
-                        <button class="intro-btn">
-                            <a href="schedule.html">Check Schedule</a>
-                        </button>
+            </section>
+
+            <section id="about-class">
+                <div class="row">
+
+                    <div class="intro-card right-card">
+                        <img class="welcome-img left-img" src="img/adultballet.jpg" alt="welcome photo">
+                        <div class="text-box">
+                            <h3>Adult Ballet</h3>
+                            <p class="class-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo
+                                ligula eget dolor. Aenean
+                                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus
+                                mus.
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                                consequat
+                                massa
+                                quis
+                                enim. Donec pede justo, fringilla vel, </p>
+                            <button class="intro-btn">
+                                <a href="schedule.html">Check Schedule</a>
+                            </button>
+                        </div>
                     </div>
+
+                    <div class="intro-card left-card">
+                        <img class="welcome-img right-img" src="img/welcome2.jpg" alt="welcome photo">
+                        <div class="text-box">
+                            <h3>Stretch Ballet</h3>
+                            <p class="class-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo
+                                ligula eget dolor. Aenean
+                                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus
+                                mus.
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                                consequat
+                                massa
+                                quis
+                                enim. Donec pede justo, fringilla vel, </p>
+
+                            <button class="intro-btn">
+                                <a href="schedule.html">Check Schedule</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="intro-card right-card">
+                        <img class="welcome-img left-img" src="img/welcome3.jpg" alt="welcome photo">
+                        <div class="text-box">
+                            <h3>Kids Ballet</h3>
+                            <p class="class-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo
+                                ligula eget dolor. Aenean
+                                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus
+                                mus.
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                                consequat
+                                massa
+                                quis
+                                enim. Donec pede justo, fringilla vel, </p>
+                            <button class="intro-btn">
+                                <a href="schedule.html">Check Schedule</a>
+                            </button>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="join-section">
+                <div class="join-message">
+                    <h3>Would you like to change your body?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+                    <button class="join-btn">
+                        <a href="#">Start today</a>
+                    </button>
                 </div>
 
-                <div class="intro-card right-card">
-                    <img class="welcome-img left-img" src="img/welcome3.jpg" alt="welcome photo">
-                    <div class="text-box">
-                        <h3>Kids Ballet</h3>
-                        <p class="class-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                            enim. Donec pede justo, fringilla vel, </p>
-                        <button class="intro-btn">
-                            <a href="schedule.html">Check Schedule</a>
-                        </button>
-                    </div>
-                </div>
-        </section>
 
-        <section id="join-section">
-            <div class="join-message">
-                <h3>Would you like to change your body?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-                <button class="join-btn">
-                    <a href="#">Start today</a>
-                </button>
-            </div>
-
-
-        </section>
-
-
+            </section>
         </div>
+
+
+
         <footer class="footer">
             <p>Layla Ballet</p>
         </footer>
+
+
 
         <script src="js/script.js"></script>
 

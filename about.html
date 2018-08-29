@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
@@ -15,27 +16,35 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="../animsition/dist/css/animsition.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="../animsition/dist/js/animsition.min.js"></script>
+
 
 </head>
 
 <body>
+
+
     <div class="wrapper">
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="animsition-link">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="about.html" class="animsition-link">About</a>
                 </li>
                 <li>
-                    <a href="class.html">Price</a>
+                    <a href="class.html" class="animsition-link">Price</a>
                 </li>
                 <li>
-                    <a href="schedule.html">Schedule</a>
+                    <a href="schedule.html" class="animsition-link">Schedule</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="animsition-link">Contact</a>
                 </li>
             </ul>
             <div class="nav__icon">
@@ -44,47 +53,66 @@
                 <span></span>
             </div>
         </nav>
-        <div class="top-title">
-            <img class="logo" src="../img/logo.png" alt="title-logo">
-        </div>
 
-        <div class="header-wrapper">
-            <div class="about-wrapper">
-                <div class="column left">
-                    <div class="info">
-
-                    </div>
-                </div>
-
-                <div class="column right">
-                    <div class="info">
-                        <div class="title">
-                            <h2>
-                                <span class="title-after">About</span>
-                                <h2>
-                                    <span class="title-before">Layla Ballet</span>
-
-                                </h2>
+        <div class="animsition">
+            <div class="top-title">
+                <img class="logo" src="../img/logo.png" alt="title-logo">
+            </div>
+            <div class="header-wrapper">
+                <div class="about-wrapper">
+                    <div class="column left">
+                        <div class="info">
 
                         </div>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus orci velit, sed pretium orci
-                            pulvinar consequat. Duis non mauris nisi. In efficitur urna sit amet risus consectetur viverra.
-                            Etiam justo mi, laoreet sed metus in, dapibus condimentum nulla. Nullam placerat nisi nec elit
-                            placerat porttitor. Donec fringilla nibh vitae pharetra mattis. Fusce lacinia feugiat nisi, at
-                            lobortis nulla mollis et. Mauris tristique vitae nisl ac dictum. Donec ullamcorper nibh id lacus
-                            efficitur venenatis non eu ante. Maecenas tincidunt vel orci ut scelerisque. Aliquam lacinia
-                            non lectus in vehicula. Sed nec velit placerat, vulputate lacus vel, interdum lorem. Morbi magna.</p>
                     </div>
+
+                    <section class="column right">
+                        <div class="info">
+                            <div class="title">
+                                <h2>
+                                    <span class="title-after">About</span>
+                                    <h2>
+                                        <span class="title-before">Layla Ballet</span>
+
+                                    </h2>
+
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus orci velit,
+                                sed
+                                pretium orci
+                                pulvinar consequat. Duis non mauris nisi. In efficitur urna sit amet risus
+                                consectetur
+                                viverra.
+                                Etiam justo mi, laoreet sed metus in, dapibus condimentum nulla. Nullam placerat
+                                nisi
+                                nec elit
+                                placerat porttitor. Donec fringilla nibh vitae pharetra mattis. Fusce lacinia
+                                feugiat
+                                nisi, at
+                                lobortis nulla mollis et. Mauris tristique vitae nisl ac dictum. Donec ullamcorper
+                                nibh
+                                id lacus
+                                efficitur venenatis non eu ante. Maecenas tincidunt vel orci ut scelerisque.
+                                Aliquam
+                                lacinia
+                                non lectus in vehicula. Sed nec velit placerat, vulputate lacus vel, interdum
+                                lorem.
+                                Morbi magna.</p>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
-
-        <footer class="footer">
-            <p>Layla Ballet</p>
-        </footer>
-
     </div>
+    <footer class="footer">
+        <p>Layla Ballet</p>
+    </footer>
+
+
+
+
+
     <script src="js/script.js"></script>
 </body>
 

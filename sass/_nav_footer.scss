@@ -9,21 +9,25 @@ nav {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
+
     ul {
         @include flex-menu;
         justify-content: center;
         background: $main-color;
+
         li {
             @include title-font;
             padding: 20px;
             list-style: none;
         }
+
         a {
             color: $white-color;
             text-decoration: none;
             background: transparent;
             font-size: 1rem;
         }
+
         a:hover {
             padding: 8px 0;
             border-bottom: 2px solid #fff;
@@ -39,6 +43,7 @@ nav {
     position: relative;
     cursor: pointer;
     display: none;
+
     span {
         display: none;
         background: rgba(255, 255, 255, 1);
@@ -76,10 +81,11 @@ nav {
     transform: translateY(-12px) rotate(45deg);
 }
 
-@media only screen and (max-width: 700px) {
+@include max-screen($breakpMobileLand-max-767) {
     nav {
         align-items: center;
         justify-content: flex-end;
+
         ul {
             -webkit-flex-direction: column;
             flex-direction: column;
@@ -89,6 +95,7 @@ nav {
             left: 0px;
             width: 100%;
             z-index: 980;
+
             li {
                 padding: 10px;
                 text-align: center;
@@ -97,11 +104,13 @@ nav {
                 margin: 0px;
                 padding: 20px;
             }
+
             li a:hover {
                 color: #000;
                 background: #fff;
             }
         }
+
         .nav__icon,
         .nav__icon span {
             display: inline-block;

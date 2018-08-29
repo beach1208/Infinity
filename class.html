@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Layla Ballet Studio</title>
+    <title>Layla Ballet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -17,6 +17,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="../animsition/dist/css/animsition.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="../animsition/dist/js/animsition.min.js"></script>
 </head>
 
 <body>
@@ -24,19 +30,19 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="animsition-link">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="about.html" class="animsition-link">About</a>
                 </li>
                 <li>
-                    <a href="class.html">Price</a>
+                    <a href="class.html" class="animsition-link">Price</a>
                 </li>
                 <li>
-                    <a href="schedule.html">Schedule</a>
+                    <a href="schedule.html" class="animsition-link">Schedule</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="animsition-link">Contact</a>
                 </li>
             </ul>
             <div class="nav__icon">
@@ -45,101 +51,113 @@
                 <span></span>
             </div>
         </nav>
-        <div class="top-title">
-            <img class="logo" src="../img/logo.png" alt="title-logo">
-        </div>
-        <div class="header-wrapper">
-            <header class="class-header">
-                <h1>Class Pricing</h1>
-            </header>
-        </div>
 
-        <section class="section-plans" id="plans">
-            <div class="row">
-                <div class="flex-box">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Royal</h3>
-                            <p class="plan-price">$100
-                                <span>/ month</span>
-                            </p>
+        <div class="animsition">
+            <div class="top-title">
+                <img class="logo" src="../img/logo.png" alt="title-logo">
+            </div>
+            <div class="header-wrapper">
+                <header class="class-header">
+                    <h1>Class Pricing</h1>
+                </header>
+            </div>
 
-                        </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Choose Any Class</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Effect for two month</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Any location</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>
-                                    </i>Refundable within 10days</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="signup-btn">Sign up</a>
-                        </div>
-                    </div>
+            <section class="section-plans" id="plans">
+                <div class="row">
+                    <div class="flex-box">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Royal</h3>
+                                <p class="plan-price">$100
+                                    <span>/ month</span>
+                                </p>
 
-                    <div class="plan-box">
-                        <div>
-                            <h3>Regular</h3>
-                            <p class="plan-price">$50
-                                <span>/ month</span>
-                            </p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Choose
+                                        Any Class</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Effect
+                                        for two month</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Any
+                                        location</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>
+                                        </i>Refundable within 10days</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#" class="signup-btn">Sign up</a>
+                            </div>
+                        </div>
 
-                        </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Ballet Class Only</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Choose one class a week</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Only A studio</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Non Refundable</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="signup-btn">Sign up</a>
-                        </div>
-                    </div>
-                    <!-- </div> -->
+                        <div class="plan-box">
+                            <div>
+                                <h3>Regular</h3>
+                                <p class="plan-price">$50
+                                    <span>/ month</span>
+                                </p>
 
-                    <!-- <div class="col span-1-of-3"> -->
-                    <div class="plan-box">
-                        <div>
-                            <h3>Visitor</h3>
-                            <p class="plan-price">$10
-                                <span>/ month</span>
-                            </p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Ballet
+                                        Class Only</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Choose
+                                        one class a week</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Only
+                                        A studio</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Non
+                                        Refundable</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#" class="signup-btn">Sign up</a>
+                            </div>
+                        </div>
+                        <!-- </div> -->
 
-                        </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>One time ticket</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Any Class</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Any location</li>
-                                <li>
-                                    <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Non Refundable</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="signup-btn">Sign up</a>
+                        <!-- <div class="col span-1-of-3"> -->
+                        <div class="plan-box">
+                            <div>
+                                <h3>Visitor</h3>
+                                <p class="plan-price">$10
+                                    <span>/ month</span>
+                                </p>
+
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>One
+                                        time ticket</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Any
+                                        Class</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Any
+                                        location</li>
+                                    <li>
+                                        <i class="fas fa-arrow-right fa-sm" style="color:#f3c282; margin-right:10px;"></i>Non
+                                        Refundable</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#" class="signup-btn">Sign up</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
-
-
+            </section>
+        </div>
 
         <footer class="footer">
             <p>Layla Ballet</p>
