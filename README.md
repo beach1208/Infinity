@@ -1,14 +1,13 @@
-# Dillinger
+# Layla Ballet
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
+Layla Ballet is a ballet studio located in Japan owned by my mother.
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+  - Designd a website from scratch.
+  - Designed a original logo.
+  - Coded using many different programming languages and techniques.
 
-# New Features!
+# Tools I used
 
-  - Import a HTML file and watch it magically convert to Markdown
-  - Drag and drop images (requires your Dropbox account be linked)
+  - Adobe XD
+  - Visual Studio Code
