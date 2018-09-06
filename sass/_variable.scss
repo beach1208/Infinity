@@ -4,6 +4,7 @@ $nav-link-color:#c57da0;
 $p-text-color: #4a4a4a;
 $white-color: #ffffff;
 $yellow-title: #bfaf95;
+$header-bg: unquote($string: "#020202b8");
 //padding margin style
 //font
 $textdeco: none;
@@ -15,7 +16,6 @@ sans-serif;
 /** =========
   Media Queries
 ========= **/
-
 $breakp-mobile-min-320: 320px;
 $breakp-mobile-mid-400: 400px;
 $breakp-mobile-mid-401: 401px;

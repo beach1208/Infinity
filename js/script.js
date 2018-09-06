@@ -8,7 +8,7 @@ $(function () {
     $(window).on('load resize', function () {
         var w = $(window).width();
         var h = $(window).height();
-        var x = 700;
+        var x = 767;
         if (w >= x) {
             $('nav ul').css({
                 display: 'flex',

@@ -835,13 +835,42 @@ body a {
 }
 
 /* ================ HEADER ====================*/
-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(55, 62, 119, 0.55)), url(../img/mainheader.jpg);
-  background-position: center;
+.top-header {
+  background: linear-gradient(#020202b8, rgba(0, 0, 0, 0.29)), url(../img/mainheader.jpg);
+  background-position: bottom;
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
+  position: relative;
   animation: bodyFadeIn 2s ease 0s 1 normal;
   -webkit-animation: bodyFadeIn 2s ease 0s 1 normal;
+}
+
+.top-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  max-width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  color: #ffffff;
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .top-header h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-header h1 {
+    font-size: 3rem;
+  }
 }
 
 @keyframes bodyFadeIn {
@@ -863,13 +892,13 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
+  .top-header {
     height: 50vh;
   }
 }
 
 .header-wrapper {
-  padding: 5%;
+  padding: 4%;
 }
 
 .top-title {
@@ -880,7 +909,7 @@ header {
 }
 
 .top-title .logo {
-  width: 70%;
+  width: 50%;
   height: auto;
   margin: 3rem 3rem 0 0;
 }
