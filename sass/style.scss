@@ -36,10 +36,12 @@ body {
 
 /* ================ HEADER ====================*/
 .top-header {
-    background: linear-gradient($header-bg, rgba(0, 0, 0, 0.29)), url(../img/mainheader.jpg);
+    background: linear-gradient($header-bg, rgba(236, 199, 181, 0.29)), url(../img/mainheader.jpg);
     background-position: bottom;
     background-size: cover;
-    height: 70vh;
+    width: 100%;
+    height: 80vh;
+    max-height: 80vh;
     position: relative;
 
     h1 {
@@ -59,29 +61,13 @@ body {
         }
     }
 
-    @include header-img-animation;
 
     @include max-screen($breakpPc-max-1024) {
         height: 50vh;
     }
 }
 
-.header-wrapper {
-    padding: 4%;
-}
 
-.top-title {
-    width: 65%;
-    overflow: auto;
-    margin: 0 auto;
-    text-align: center;
-
-    .logo {
-        width: 50%;
-        height: auto;
-        margin: 3rem 3rem 0 0;
-    }
-}
 
 /* ============== Welcome section  =================*/
 #welcome-message {

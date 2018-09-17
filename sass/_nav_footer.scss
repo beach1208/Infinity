@@ -1,31 +1,50 @@
 // navigation bar style // 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top-header {
+
+    nav,
+    ul {
+        background: transparent;
+    }
+
+    a {
+        color: $white-color;
+    }
+}
+
 nav {
-    height: 80px;
+    height: 55px;
     margin: 0px auto;
-    background: $main-color;
+    background: $nav-bg;
     width: 100%;
     display: -webkit-flex;
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     ul {
         @include flex-menu;
-        justify-content: center;
-        background: $main-color;
+        background: $nav-bg;
+        margin-right: 1rem;
 
         li {
-            @include title-font;
-            padding: 20px;
+            @include p-font;
+            padding: 15px;
             list-style: none;
+            letter-spacing: 1px;
         }
 
         a {
-            color: $white-color;
+            color: $nav-link;
             text-decoration: none;
             background: transparent;
-            font-size: 1rem;
+            font-size: .9rem;
         }
 
         a:hover {
@@ -86,6 +105,7 @@ nav {
         align-items: center;
         justify-content: flex-end;
 
+
         ul {
             -webkit-flex-direction: column;
             flex-direction: column;
@@ -123,8 +143,10 @@ nav {
 
 ///footer style///
 .footer {
-    background: $main-color;
-    padding: 2rem;
-    color: $white-color;
+    background: $nav-bg;
+    padding: 1rem;
+    @include p-font;
+    color: $nav-link;
     text-align: center;
+    margin-top: auto;
 }

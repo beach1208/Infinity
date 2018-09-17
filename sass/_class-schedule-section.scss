@@ -1,15 +1,17 @@
 /* ================ Class Schedule Section ======================== */
 
 .schedule-header {
-    background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/scheduleheader.jpg);
+    background: linear-gradient($header-bg, rgba(236, 199, 181, 0.29)), url(../img/scheduleheader.jpg);
     background-position: top;
     background-size: cover;
     height: 50vh;
     position: relative;
     @include header-img-animation;
+
     @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
         height: 30vh;
     }
+
     h1 {
         @include title-font;
         @include vertical-center;
@@ -17,9 +19,11 @@
         font-size: 4.5rem;
         letter-spacing: 2px;
         margin: 0;
+
         @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
             font-size: 3.2rem;
         }
+
         @include max-screen($breakpMobileLand-max-767) {
             font-size: 3rem;
         }
@@ -41,6 +45,7 @@
 .class-schedule {
     border-bottom: 1px solid #bdbdbd;
     align-items: center;
+
     h2,
     p {
         height: 100%;
@@ -48,11 +53,13 @@
         padding: 2rem 0;
         font-family: "ButlerReg", Times, serif;
     }
+
     h2 {
         font-size: 2rem;
         width: 20%;
         color: $yellow-title;
     }
+
     p {
         font-size: 1em;
         width: 15%;
@@ -77,6 +84,7 @@
     transition: all .5s;
     border: 1px solid #2e335b;
     text-transform: uppercase;
+
     &:hover {
         background: #ffffff;
     }

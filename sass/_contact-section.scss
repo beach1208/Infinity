@@ -1,16 +1,18 @@
 /* ================ Contact Section ======================== */
 
 .contact-header {
-    background: linear-gradient(rgba(113, 113, 113, 0.71), rgba(0, 0, 0, 0.274)), url(../img/contact.jpg);
+    background: linear-gradient($header-bg, rgba(236, 199, 181, 0.29)), url(../img/contact.jpg);
     background-position-y: 60%;
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
     position: relative;
     @include header-img-animation;
+
     @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
         height: 30vh;
     }
+
     h1 {
         @include title-font;
         @include vertical-center;
@@ -18,9 +20,11 @@
         font-size: 4.5rem;
         letter-spacing: 2px;
         margin: 0;
+
         @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
             font-size: 3.2rem;
         }
+
         @include max-screen($breakpMobileLand-max-767) {
             font-size: 3rem;
         }
@@ -45,17 +49,21 @@
 
 .map-info {
     padding: 0 3rem;
+
     @include max-screen($breakpMobileLand-min-768) {
         padding: 0;
     }
+
     .map2 {
         padding-top: 3rem;
     }
+
     .map1,
     .map2 {
         width: 100%;
         margin-bottom: 1.5rem;
     }
+
     h2 {
         color: $main-color;
         text-align: center;
@@ -71,6 +79,7 @@
     padding: 1.5rem;
     @include title-font;
     letter-spacing: 1px;
+
     @include screen($breakpMobileLand-min-768, $breakpTablet-max-960) {
         margin-left: 2rem;
     }
@@ -91,6 +100,7 @@ input {
     border-bottom: 1px solid $main-color;
     outline: 0;
     padding: 10px;
+
     &:focus {
         font-size: 1.2rem;
     }
@@ -112,12 +122,15 @@ textarea {
     transition: all .5s;
     border: 1px solid #2e335b;
     text-transform: uppercase;
+
     &:hover {
         background: #ffffff;
     }
+
     @include min-screen($breakpMobileLand-min-768) {
         .submit-btn {
             align-content: center;
+
             button {
                 flex-grow: -1;
                 flex-basis: 10%;
