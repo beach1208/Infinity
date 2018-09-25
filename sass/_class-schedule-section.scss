@@ -7,27 +7,13 @@
     height: 50vh;
     position: relative;
     @include header-img-animation;
+    @include headerTitle;
 
-    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+    @include max-screen($breakpPc-max-1024) {
         height: 30vh;
     }
 
-    h1 {
-        @include title-font;
-        @include vertical-center;
-        color: $white-color;
-        font-size: 4.5rem;
-        letter-spacing: 2px;
-        margin: 0;
 
-        @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
-            font-size: 3.2rem;
-        }
-
-        @include max-screen($breakpMobileLand-max-767) {
-            font-size: 3rem;
-        }
-    }
 }
 
 #table-class-price {
@@ -58,12 +44,33 @@
         font-size: 2rem;
         width: 20%;
         color: $yellow-title;
+
+        @include max-screen($breakpMobileLand-max-767) {
+            font-size: .9rem;
+            width: 20%;
+        }
+
+        @include max-screen($breakp-mobile-max-480) {
+            font-size: 1rem;
+            width: 25%;
+        }
+
+
     }
 
     p {
         font-size: 1em;
         width: 15%;
     }
+
+    p:last-child {
+        @include max-screen($breakp-mobile-max-480) {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+
+
 }
 
 .flex {
@@ -87,5 +94,14 @@
 
     &:hover {
         background: #ffffff;
+    }
+}
+
+@include max-screen($breakpTablet-max-960) {
+
+    .class-schedule,
+    .book_btn {
+        font-size: .7rem;
+        padding: .8rem 1rem;
     }
 }

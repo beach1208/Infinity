@@ -7,27 +7,16 @@
     position: relative;
     height: 50vh;
     @include header-img-animation;
+    @include headerTitle;
 
-    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+    @include max-screen($breakpPc-max-1024) {
         height: 30vh;
     }
 
-    h1 {
-        @include title-font;
-        @include vertical-center;
-        color: $white-color;
-        font-size: 4.5rem;
-        letter-spacing: 2px;
-        margin: 0;
+}
 
-        @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
-            font-size: 3.2rem;
-        }
-
-        @include max-screen($breakpMobileLand-max-767) {
-            font-size: 3rem;
-        }
-    }
+.class-wrapper {
+    background-color: #f4f4f4;
 }
 
 .section-plans {
@@ -92,6 +81,7 @@
     font-size: 3rem;
     margin: 1rem 1rem;
     color: #fff2dd;
+    font-family: $priceList;
 
     span {
         font-size: 1rem;
@@ -107,6 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    align-items: stretch;
 
     li {
         width: 100%;

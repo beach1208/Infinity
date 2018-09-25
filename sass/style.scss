@@ -44,23 +44,7 @@ body {
     max-height: 80vh;
     position: relative;
 
-    h1 {
-        @include title-font;
-        @include vertical-center;
-        color: $white-color;
-        font-size: 4.5rem;
-        letter-spacing: 2px;
-        margin: 0;
-
-        @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
-            font-size: 3.2rem;
-        }
-
-        @include max-screen($breakpMobileLand-max-767) {
-            font-size: 3rem;
-        }
-    }
-
+    @include headerTitle;
 
     @include max-screen($breakpPc-max-1024) {
         height: 50vh;
@@ -246,24 +230,28 @@ body {
     }
 
     h3 {
-        font-size: 2.5rem;
-        color: #ffffff;
+        font-size: 3rem;
+        ;
+        text-align: center;
+        color: $white-color;
         @include title-font;
 
-        @include screen($breakp-mobile-min-320, $breakp-mobile-max-480) {
-            font-size: 1.3rem;
-            text-align: center;
+        @include max-screen($breakpMobileLand-min-768) {
+            font-size: 2.5rem;
         }
 
-        @include screen($breakpMobileLand-min-481, $breakpMobileLand-max-600) {
+        @include screen($breakp-mobile-mid-401, $breakpMobileLand-max-767) {
             font-size: 2rem;
-            text-align: center;
+        }
+
+        @include max-screen($breakp-mobile-mid-400) {
+            font-size: 1.5rem;
         }
     }
 
     p {
         padding: 2rem;
-        color: #fff;
+        color: $white-color;
 
         @include max-screen($breakpMobileLand-max-600) {
             padding: 1rem;
@@ -287,45 +275,5 @@ body {
                 color: $nav-link-color;
             }
         }
-    }
-}
-
-@media all and (max-width: 550px) {
-    .class-schedule {
-        p:last-child {
-            width: 100%;
-            display: inline-block;
-        }
-
-        h2 {
-            font-size: 1rem;
-            width: 25%;
-        }
-
-        p {
-            width: 25%;
-        }
-    }
-}
-
-@media all and (max-width: 760px) {
-    .class-schedule {
-        h2 {
-            font-size: .9rem;
-            width: 20%;
-        }
-
-        p {
-            width: 20%;
-        }
-    }
-}
-
-@media all and (max-width: 860px) {
-
-    .class-schedule,
-    .book_btn {
-        font-size: .7rem;
-        padding: .8rem 1rem;
     }
 }

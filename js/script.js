@@ -50,7 +50,7 @@ sr.reveal('.right-img', {
     duration: 900,
     scale: 1.0,
     delay: 300,
-    opacity: 0.2,
+    opacity: 0,
 });
 
 sr.reveal('.left-img', {
@@ -60,7 +60,7 @@ sr.reveal('.left-img', {
     duration: 900,
     scale: 1.0,
     delay: 300,
-    opacity: 0.2,
+    opacity: 0,
 });
 
 sr.reveal('.join-message', {

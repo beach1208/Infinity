@@ -8,133 +8,128 @@
     height: 50vh;
     position: relative;
     @include header-img-animation;
+    @include headerTitle;
 
-    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+    @include max-screen($breakpPc-max-1024) {
         height: 30vh;
     }
 
-    h1 {
-        @include title-font;
-        @include vertical-center;
-        color: $white-color;
-        font-size: 4.5rem;
-        letter-spacing: 2px;
-        margin: 0;
-
-        @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
-            font-size: 3.2rem;
-        }
-
-        @include max-screen($breakpMobileLand-max-767) {
-            font-size: 3rem;
-        }
-    }
 }
 
-@include min-screen($breakpMobileLand-min-768) {
-    .contact-wrapper {
-        display: flex;
-    }
-}
 
-.col {
-    width: 100%;
-}
 
-.right-col {
-    @include max-screen($breakpMobileLand-min-768) {
-        margin-top: 3rem;
-    }
-}
-
-.map-info {
-    padding: 0 3rem;
-
-    @include max-screen($breakpMobileLand-min-768) {
-        padding: 0;
-    }
-
-    .map2 {
-        padding-top: 3rem;
-    }
-
-    .map1,
-    .map2 {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-
-    h2 {
-        color: $main-color;
-        text-align: center;
-        @include title-font;
-    }
-}
-
-#signup-form {
-    border: 1px solid $main-color;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
-    @include title-font;
-    letter-spacing: 1px;
-
-    @include screen($breakpMobileLand-min-768, $breakpTablet-max-960) {
-        margin-left: 2rem;
-    }
-}
-
-label,
-input,
-textarea {
-    margin: .5rem 0;
-}
-
-label {
-    font-weight: bold;
-}
-
-input {
-    border: none;
-    border-bottom: 1px solid $main-color;
-    outline: 0;
-    padding: 10px;
-
-    &:focus {
-        font-size: 1.2rem;
-    }
-}
-
-textarea {
-    padding: 10px;
-}
-
-.submit-btn {
-    background-color: $main-color;
-    color: $yellow-title;
-    border: none;
-    flex-basis: 100%;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 10px 3px;
-    padding: 15px;
-    transition: all .5s;
-    border: 1px solid #2e335b;
-    text-transform: uppercase;
-
-    &:hover {
-        background: #ffffff;
-    }
+.contact-section {
 
     @include min-screen($breakpMobileLand-min-768) {
-        .submit-btn {
-            align-content: center;
+        display: flex;
+    }
 
-            button {
-                flex-grow: -1;
-                flex-basis: 10%;
+    .col {
+        width: 100%;
+    }
+
+    .left-col {
+        padding-bottom: 2rem;
+    }
+
+    .right-col {
+
+        padding: 8rem 2rem 3rem;
+
+        @include max-screen($breakpMobileLand-max-767) {
+            padding: 2rem;
+        }
+    }
+
+    .map-info {
+        padding: 0 3rem;
+
+        @include max-screen($breakpMobileLand-max-767) {
+            padding: 0;
+        }
+
+        .map1,
+        .map2 {
+            width: 100%;
+            padding-top: 3rem;
+        }
+
+        h2 {
+            color: $main-color;
+            text-align: center;
+            @include title-font;
+            padding-top: 3rem;
+        }
+
+
+    }
+
+    #signup-form {
+        border: 1px solid $main-color;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding: 1.5rem;
+        @include title-font;
+        letter-spacing: 1px;
+
+        @include screen($breakpMobileLand-min-768, $breakpTablet-max-960) {
+            margin-left: 2rem;
+        }
+    }
+
+    label,
+    input,
+    textarea {
+        margin: .5rem 0;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid $main-color;
+        outline: 0;
+        padding: 10px;
+
+        &:focus {
+            font-size: 1.1rem;
+        }
+    }
+
+    textarea {
+        padding: 10px;
+    }
+
+    .submit-btn {
+        background-color: $main-color;
+        color: $yellow-title;
+        border: none;
+        flex-basis: 100%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 10px 3px;
+        padding: 15px;
+        transition: all .5s;
+        border: 1px solid #2e335b;
+        text-transform: uppercase;
+
+        &:hover {
+            background: #ffffff;
+        }
+
+        @include min-screen($breakpMobileLand-min-768) {
+            .submit-btn {
+                align-content: center;
+
+                button {
+                    flex-grow: -1;
+                    flex-basis: 10%;
+                }
             }
         }
     }
+
 }

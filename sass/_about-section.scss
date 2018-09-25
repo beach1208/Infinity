@@ -1,122 +1,49 @@
 /*================== About section =====================/*/
 
-.about-wrapper {
-    min-height: 80vh;
-    @include min-screen($breakpTablet-min-601) {
-        display: flex;
+.about-header {
+    background: linear-gradient($header-bg, rgba(236, 199, 181, 0.29)), url(../img/about-header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    @include header-img-animation;
+    @include headerTitle;
+
+    @include max-screen($breakpPc-max-1024) {
+        height: 30vh;
     }
 }
 
-.column {
-    height: auto;
-    width: 100%;
-    @include screen($breakpTablet-min-601, $breakpTablet-max-960) {
-        max-height: 100vh;
-    }
-}
 
-.left {
-    background-image: url(../img/about2.jpg);
-    @include background-position;
-    @include max-screen($breakpMobileLand-max-600) {
-        height: 50vh;
-    }
-}
+.about-column {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    font-family: $priceList;
+    color: $main-color;
 
-.right {
-    background: #e6e2e5;
-    @include max-screen($breakpMobileLand-max-600) {
-        height: auto;
-    }
-}
-
-.right,
-.left {
-    @include screen($breakpTablet-min-601, $breakpTablet-max-960) {
-        width: 50%;
-    }
-}
-
-.info {
-    height: auto;
-    padding-top: 3rem;
     h2 {
-        color: $main-color;
-        font-size: 3.3rem;
-        display: flex;
-        align-items: center;
-        padding: 0 3rem;
-        @include title-font;
-        .title-after {
-            display: block;
-            position: relative;
-            &::after {
-                content: '';
-                display: block;
-                width: 100px;
-                height: 1px;
-                background-color: $main-color;
-                position: absolute;
-                top: 50%;
-                left: 200px;
-                @include max-screen($breakp-mobile-mid-400) {
-                    left: 110px;
-                    width: 80px;
-                }
-                @include screen($breakp-mobile-mid-401, $breakpMobileLand-max-600) {
-                    left: 130px;
-                }
-                @include screen($breakpTablet-min-601, $breakpTablet-max-960) {
-                    left: 150px;
-                }
-            }
-        }
-        .title-before {
-            display: block;
-            position: relative;
-            margin-left: 5rem;
-            @include max-screen($breakp-mobile-mid-400) {
-                margin-left: 2rem;
-            }
-            &::before {
-                content: '';
-                display: block;
-                width: 70px;
-                height: 1px;
-                background-color: $main-color;
-                position: absolute;
-                top: 50%;
-                left: -100px;
-                @include max-screen($breakp-mobile-mid-400) {
-                    left: -70px;
-                    width: 50px;
-                }
-            }
-        }
-        @include max-screen($breakp-mobile-mid-400) {
-            font-size: 1.8rem;
-        }
-        @include screen($breakp-mobile-mid-401, $breakpTablet-max-960) {
-            font-size: 2.2rem;
-        }
-        @include screen($breakpTablet-min-601, $breakpTablet-max-960) {
-            padding: 0 1.5rem;
-        }
-        @include screen($breakpMobileLand-min-768, $breakpTablet-max-960) {}
-        @include screen($breakpPc-min-961, $breakpPc-max-1024) {
-            font-size: 3rem;
-        }
+        text-align: center;
     }
+
     p {
         padding: 2rem;
         color: $p-text-color;
         @include p-font;
+
         @include max-screen($breakp-mobile-min-320) {
             padding: 1rem;
             font-size: 1rem;
         }
     }
-    .footer {
-        margin-top: auto;
+
+    .history-text {
+        padding-top: 2rem;
     }
+}
+
+
+
+.footer {
+    margin-top: auto;
 }

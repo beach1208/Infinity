@@ -1,5 +1,6 @@
 // navigation bar style // 
-.wrapper {
+.wrapper,
+.class-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -144,9 +145,12 @@ nav {
 ///footer style///
 .footer {
     background: $nav-bg;
-    padding: 1rem;
     @include p-font;
     color: $nav-link;
     text-align: center;
     margin-top: auto;
+
+    p {
+        padding: 1rem;
+    }
 }

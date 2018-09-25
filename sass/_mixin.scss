@@ -1,5 +1,25 @@
 @import "variable";
 //========== mixin ===============//
+
+@mixin headerTitle {
+    h1 {
+        @include title-font;
+        @include vertical-center;
+        color: $white-color;
+        font-size: 4.5rem;
+        letter-spacing: 2px;
+        margin: 0;
+
+        @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+            font-size: 3.2rem;
+        }
+
+        @include max-screen($breakpMobileLand-max-767) {
+            font-size: 3rem;
+        }
+    }
+}
+
 @mixin title-font {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -52,18 +72,22 @@
 @mixin header-img-animation {
     animation: bodyFadeIn 2s ease 0s 1 normal;
     -webkit-animation: bodyFadeIn 2s ease 0s 1 normal;
+
     @keyframes bodyFadeIn {
         0% {
             opacity: 0
         }
+
         100% {
             opacity: 1
         }
     }
+
     @-webkit-keyframes bodyFadeIn {
         0% {
             opacity: 0
         }
+
         100% {
             opacity: 1
         }
