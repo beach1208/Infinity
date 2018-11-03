@@ -2,96 +2,97 @@
 //========== mixin ===============//
 
 @mixin headerTitle {
-    h1 {
-        @include title-font;
-        @include vertical-center;
-        color: $white-color;
-        font-size: 4.5rem;
-        letter-spacing: 2px;
-        margin: 0;
+  h1 {
+    @include title-font;
+    @include vertical-center;
+    color: $white-color;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    margin: 0;
 
-        @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
-            font-size: 3.2rem;
-        }
-
-        @include max-screen($breakpMobileLand-max-767) {
-            font-size: 3rem;
-        }
+    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+      font-size: 3.2rem;
     }
+
+    @include max-screen($breakpMobileLand-max-767) {
+      font-size: 3rem;
+    }
+  }
 }
 
 @mixin title-font {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
 }
 
 @mixin p-font {
-    font-family: $pfont;
-    color: $p-text-color;
+  font-family: $pfont;
+  color: $p-text-color;
 }
 
 @mixin flex-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @mixin lp-button {
-    background: $nav-link-color;
-    padding: 1rem 2rem;
-    transition: all .5s;
+  background: $nav-link-color;
+  padding: 1rem 2rem;
+  transition: all 0.5s;
+  color: $white-color;
 }
 
 @mixin lp-button-hover {
-    background: $white-color;
-    color: $nav-link-color;
-    border: 1px solid $nav-link-color;
+  background: $white-color;
+  color: $nav-link-color;
+  border: 1px solid $nav-link-color;
 }
 
 @mixin border-style {
-    border-top: 1px solid;
-    content: "";
-    flex-grow: 1;
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
 }
 
 @mixin vertical-center {
-    max-width: 100%;
-    height: auto;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    overflow: auto;
+  max-width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
 }
 
 @mixin background-position {
-    background-position: center;
-    background-size: cover;
+  background-position: center;
+  background-size: cover;
 }
 
 @mixin header-img-animation {
-    animation: bodyFadeIn 2s ease 0s 1 normal;
-    -webkit-animation: bodyFadeIn 2s ease 0s 1 normal;
+  animation: bodyFadeIn 2s ease 0s 1 normal;
+  -webkit-animation: bodyFadeIn 2s ease 0s 1 normal;
 
-    @keyframes bodyFadeIn {
-        0% {
-            opacity: 0
-        }
-
-        100% {
-            opacity: 1
-        }
+  @keyframes bodyFadeIn {
+    0% {
+      opacity: 0;
     }
 
-    @-webkit-keyframes bodyFadeIn {
-        0% {
-            opacity: 0
-        }
-
-        100% {
-            opacity: 1
-        }
+    100% {
+      opacity: 1;
     }
+  }
+
+  @-webkit-keyframes bodyFadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 /* ==============
@@ -99,19 +100,19 @@
   ============= */
 
 @mixin max-screen($breakPoint) {
-    @media screen and (max-width: $breakPoint) {
-        @content;
-    }
+  @media screen and (max-width: $breakPoint) {
+    @content;
+  }
 }
 
 @mixin min-screen($breakPoint) {
-    @media screen and (min-width: $breakPoint) {
-        @content;
-    }
+  @media screen and (min-width: $breakPoint) {
+    @content;
+  }
 }
 
 @mixin screen($breakPointMin, $breakPointMax) {
-    @media screen and (min-width: $breakPointMin) and (max-width: $breakPointMax) {
-        @content;
-    }
+  @media screen and (min-width: $breakPointMin) and (max-width: $breakPointMax) {
+    @content;
+  }
 }

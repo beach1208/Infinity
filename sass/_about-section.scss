@@ -1,49 +1,47 @@
 /*================== About section =====================/*/
 
 .about-header {
-    background: linear-gradient($header-bg, rgba(236, 199, 181, 0.29)), url(../img/about-header.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    height: 50vh;
-    @include header-img-animation;
-    @include headerTitle;
+  background: linear-gradient($header-bg, rgba(236, 199, 181, 0.29)),
+    url(../img/about-header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+  @include header-img-animation;
+  @include headerTitle;
 
-    @include max-screen($breakpPc-max-1024) {
-        height: 30vh;
-    }
+  @include max-screen($breakpPc-max-1024) {
+    height: 30vh;
+  }
 }
-
 
 .about-column {
-    width: 80%;
-    margin: 0 auto;
-    padding: 5rem 0;
-    font-family: $priceList;
-    color: $main-color;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  font-family: $priceList;
+  color: $main-color;
 
-    h2 {
-        text-align: center;
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    padding: 2rem;
+    color: $p-text-color;
+    @include p-font;
+
+    @include max-screen($breakp-mobile-min-320) {
+      padding: 1rem;
+      font-size: 1rem;
     }
+  }
 
-    p {
-        padding: 2rem;
-        color: $p-text-color;
-        @include p-font;
-
-        @include max-screen($breakp-mobile-min-320) {
-            padding: 1rem;
-            font-size: 1rem;
-        }
-    }
-
-    .history-text {
-        padding-top: 2rem;
-    }
+  .history-text {
+    padding-top: 2rem;
+  }
 }
 
-
-
 .footer {
-    margin-top: auto;
+  margin-top: auto;
 }

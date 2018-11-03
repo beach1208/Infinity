@@ -1,19 +1,19 @@
 // color style
-$main-color:#2e335b;
-$nav-link-color:#c57da0;
+$main-color: #2e335b;
+$nav-link-color: #c57da0;
 $p-text-color: #4a4a4a;
 $white-color: #ffffff;
 $yellow-title: #bfaf95;
 $nav-bg: #f5e8dd;
-$nav-link: #797979;
-$header-bg: unquote($string: "#4e443cb8");
+$nav-link: #4c4c4c;
+$header-bg: unquote(
+  $string: "#4e443cb8"
+);
 //padding margin style
 //font
 $textdeco: none;
-$pfont:'PT Sans',
-sans-serif;
-$priceList: 'Roboto',
-sans-serif;
+$pfont: "PT Sans", sans-serif;
+$priceList: "Roboto", sans-serif;
 //======= media queries =======
 /** =========
   Media Queries
