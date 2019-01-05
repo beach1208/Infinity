@@ -7,6 +7,7 @@
   background-size: cover;
   position: relative;
   height: 50vh;
+  margin-bottom: 50px;
   @include header-img-animation;
   @include headerTitle;
 
@@ -18,16 +19,18 @@
 .about-column {
   width: 80%;
   margin: 0 auto;
-  padding: 5rem 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: $priceList;
   color: $main-color;
 
   h2 {
-    text-align: center;
+    text-align: left;
   }
 
   p {
-    padding: 2rem;
     color: $p-text-color;
     @include p-font;
 
@@ -38,7 +41,22 @@
   }
 
   .history-text {
-    padding-top: 2rem;
+    width: 70%;
+
+    @include max-screen($breakpMobileLand-max-767){
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .teacher-img {
+    max-width: 100%; 
+    height: 200px;
+
+    @include max-screen($breakpMobileLand-max-767) {
+    display: block;
+  }
+
   }
 }
 
