@@ -31,16 +31,16 @@ Layla Ballet is a ballet studio located in Japan owned by my mother.
 ## Design
 - Target
 
-My mother have more adults students than kids students in her studio. 
-And she wants to keep getting more adult students. So I setted the target as over 30 years old adult students who want to start taking ballet lessons.
+My mother has more adults students than children in her studio. 
+She wants to keep getting more adult students,so I set the target as over 30 years old adult students who want to start taking ballet lessons.
 
 - Wireframe
 
-I paied attention most to wireframing and layouts so that users could easily check class schedules and class prices.
+I paid attention most to wireframing and layouts so that users could easily check class schedules and class prices.
 
 - Design
 
-After wireframing, I carefully picked colors and Font family of the design.
+After wireframing, I carefully picked the colours and Font family of the design.
 And I made it as a responsive design. 
 
 

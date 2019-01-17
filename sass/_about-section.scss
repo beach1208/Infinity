@@ -23,16 +23,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-family: $priceList;
+  font-family: $pfont;
   color: $main-color;
 
   h2 {
     text-align: left;
+    margin-bottom: 10px;
   }
 
   p {
     color: $p-text-color;
-    @include p-font;
 
     @include max-screen($breakp-mobile-min-320) {
       padding: 1rem;
