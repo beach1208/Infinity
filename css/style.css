@@ -458,7 +458,7 @@ nav ul a:hover {
   color: #ffffff;
   height: auto;
   padding: 1rem 4rem;
-  border-radius: 50px;
+  border-radius: 5px;
   transition: all .5s;
 }
 
@@ -625,6 +625,7 @@ nav ul a:hover {
   text-align: center;
   transition: all .5s;
   border: 1px solid #2e335b;
+  border-radius: 5px;
   text-transform: uppercase;
 }
 
@@ -754,6 +755,7 @@ nav ul a:hover {
 
 .contact-section #signup-form {
   border: 1px solid #2e335b;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
@@ -798,6 +800,7 @@ nav ul a:hover {
   background-color: #2e335b;
   color: #bfaf95;
   border: none;
+  border-radius: 5px;
   flex-basis: 100%;
   font-size: 1.2rem;
   font-weight: bold;
@@ -1048,6 +1051,7 @@ body a {
 
 #about-class .intro-btn {
   background: #c57da0;
+  border-radius: 5px;
   padding: 1rem 2rem;
   transition: all 0.5s;
   color: #ffffff;
@@ -1132,6 +1136,7 @@ body a {
   left: 50%;
   overflow: auto;
   background: #c57da0;
+  border-radius: 5px;
   padding: 1rem 2rem;
   transition: all 0.5s;
   color: #ffffff;

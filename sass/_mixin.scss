@@ -38,9 +38,11 @@
 
 @mixin lp-button {
   background: $nav-link-color;
+  border-radius: 5px;
   padding: 1rem 2rem;
   transition: all 0.5s;
   color: $white-color;
+  
 }
 
 @mixin lp-button-hover {
