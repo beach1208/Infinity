@@ -52,7 +52,7 @@ nav ul {
 nav ul li {
   font-family: "PT Sans", sans-serif;
   color: #4a4a4a;
-  padding: 15px;
+  margin: 15px;
   list-style: none;
   letter-spacing: 1px;
 }
@@ -559,8 +559,7 @@ nav ul a:hover {
   position: relative;
   max-width: 1400px;
   width: 85%;
-  margin: 0 auto;
-  padding: 5rem 0;
+  margin: 5rem auto;
 }
 
 .class-schedule {
@@ -572,7 +571,7 @@ nav ul a:hover {
 .class-schedule p {
   height: 100%;
   text-align: left;
-  padding: 2rem 0;
+  margin: 2rem 0;
   font-family: "ButlerReg", Times, serif;
 }
 
@@ -894,12 +893,12 @@ body a {
 
 /* ============== Welcome section  =================*/
 #welcome-message {
-  padding: 6rem 0;
+  margin: 6rem 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
   #welcome-message {
-    padding: 2rem 0;
+    margin: 2rem 0;
   }
 }
 
@@ -947,7 +946,7 @@ body a {
 }
 
 #welcome-message p {
-  padding: 2rem;
+  margin-top: 2rem;
   font-family: "PT Sans", sans-serif;
   color: #4a4a4a;
   color: #4a4a4a;
@@ -996,7 +995,7 @@ body a {
 }
 
 #about-class .text-box {
-  padding: 2rem;
+  margin: 1rem;
 }
 
 #about-class .text-box h3 {
@@ -1046,7 +1045,7 @@ body a {
 #about-class .text-box p {
   font-family: "PT Sans", sans-serif;
   color: #4a4a4a;
-  padding: 3rem 0;
+  margin: 3rem 0;
 }
 
 #about-class .intro-btn {
@@ -1124,7 +1123,7 @@ body a {
 #join-section .join-message p {
   color: #ffffff;
   text-align: center;
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 #join-section .join-btn {
